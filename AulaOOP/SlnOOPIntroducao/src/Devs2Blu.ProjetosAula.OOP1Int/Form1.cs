@@ -30,9 +30,9 @@ namespace Devs2Blu.ProjetosAula.OOP1Int
         {
             if (rbDiretor.Checked)
             {
-                Diretor diretor = new Diretor();
-                diretor.Nome = txtNome.Text;
-                diretor.SobreNome = txtSobreNome.Text;
+                Diretor diretor = new Diretor(txtNome.Text, txtSobreNome.Text, 5000.00);
+                //diretor.Nome = txtNome.Text;
+                //diretor.SobreNome = txtSobreNome.Text;
                 SalvarDiretor(diretor);
             }
             else if (rbRecepcionista.Checked)

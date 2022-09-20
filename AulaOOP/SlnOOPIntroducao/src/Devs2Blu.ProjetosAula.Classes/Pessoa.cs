@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Devs2Blu.ProjetosAula.Classes
 {
-    public class Pessoa //classe
+    public abstract class Pessoa //classe | o abstract nao permite com que a calsse seja instanciada
     {
         //prop tab tab, cria uma propriedade/atributo
         public string Nome { get; set; }
