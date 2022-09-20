@@ -32,7 +32,7 @@ namespace Devs2Blu.ProjetosAula.OOP1Int
             {
                 Diretor diretor = new Diretor(txtNome.Text, txtSobreNome.Text, 5000.00);
                 //diretor.Nome = txtNome.Text;
-                //diretor.SobreNome = txtSobreNome.Text;
+                //diretor.SobreNome = txtSobreNome.Text;;
                 SalvarDiretor(diretor);
             }
             else if (rbRecepcionista.Checked)
