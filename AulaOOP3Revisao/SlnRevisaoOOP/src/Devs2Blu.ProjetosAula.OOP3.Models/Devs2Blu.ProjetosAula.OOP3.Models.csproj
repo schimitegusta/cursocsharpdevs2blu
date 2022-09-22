@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enum\TipoPessoa.cs" />
+    <Compile Include="Enums\TipoPessoa.cs" />
     <Compile Include="Model\Agenda.cs" />
     <Compile Include="Model\AgendaPaciente.cs" />
     <Compile Include="Model\ContaPaciente.cs" />

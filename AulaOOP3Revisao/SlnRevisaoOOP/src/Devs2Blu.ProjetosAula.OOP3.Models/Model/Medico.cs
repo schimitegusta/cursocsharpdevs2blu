@@ -22,8 +22,8 @@ namespace Devs2Blu.ProjetosAula.OOP3.Models.Model
             Nome = nome;
             CGCCPF = cpf;
             CRM = crm;
-            TipoPessoa = TipoPessoa.PF;
             Especialidade = especialidade;
+            TipoPessoa = TipoPessoa.PF;
 
             Random rd = new Random();
             CodigoMedico = Int32.Parse($"{codigo}{rd.Next(100, 999)}");
