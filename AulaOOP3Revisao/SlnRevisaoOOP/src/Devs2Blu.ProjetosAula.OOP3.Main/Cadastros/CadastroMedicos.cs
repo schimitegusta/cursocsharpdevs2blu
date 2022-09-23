@@ -17,13 +17,13 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
             {
                 Console.Clear();
                 Console.WriteLine(" _____________________________________");
-                Console.WriteLine("|        Cadastro de Medicos          |");
+                Console.WriteLine("|          Cadastro de Medicos        |");
                 Console.WriteLine("|-------------------------------------|");
                 Console.WriteLine("|      1 -   Lista de Medicos         |");
                 Console.WriteLine("|      2 - Cadastro de Medicos        |");
                 Console.WriteLine("|      3 -   Alterar Medicos          |");
                 Console.WriteLine("|-------------------------------------|");
-                Console.WriteLine("|      0 -         SAIR               |");
+                Console.WriteLine("|      0 -        VOLTAR              |");
                 Console.WriteLine("|_____________________________________|");
                 Int32.TryParse(Console.ReadLine(), out opcao);
 

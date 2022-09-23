@@ -1,20 +1,15 @@
-﻿using System;
+﻿using Devs2Blu.ProjetosAula.OOP3.Main.Utils.Enums;
+using Devs2Blu.ProjetosAula.OOP3.Models.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Devs2Blu.ProjetosAula.OOP3.Main.Utils;
-using Devs2Blu.ProjetosAula.OOP3.Main.Utils.Enums;
-using Devs2Blu.ProjetosAula.OOP3.Models.Model;
 
 namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
 {
-    public class CadastroPaciente
+    public class CadastroRecepcionistas
     {
-        public CadastroPaciente()
-        {
-
-        }
         public void MenuCadastro()
         {
             Int32 opcao;
@@ -22,11 +17,11 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
             {
                 Console.Clear();
                 Console.WriteLine(" _____________________________________");
-                Console.WriteLine("|        Cadastro de Pacientes        |");
+                Console.WriteLine("|      Cadastro de Recepcionistas     |");
                 Console.WriteLine("|-------------------------------------|");
-                Console.WriteLine("|      1 -   Lista de Pacientes       |");
-                Console.WriteLine("|      2 - Cadastro de Pacientes      |");
-                Console.WriteLine("|      3 -   Alterar Pacientes        |");
+                Console.WriteLine("|    1 -  Lista de Recepcionistas     |");
+                Console.WriteLine("|    2 - Cadastro de Recepcionista    |");
+                Console.WriteLine("|    3 -   Alterar Recepcionista      |");
                 Console.WriteLine("|-------------------------------------|");
                 Console.WriteLine("|      0 -        VOLTAR              |");
                 Console.WriteLine("|_____________________________________|");
@@ -35,36 +30,37 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
                 switch (opcao)
                 {
                     case (int)MenuEnums.LISTAR:
-                        ListarPacientes();
+                        ListarRecepcionistas();
                         break;
                     default:
                         break;
                 }
             } while (!opcao.Equals((int)MenuEnums.SAIR));
         }
-        public void ListarPacientes()
+        public void ListarRecepcionistas()
         {
             Console.Clear();
-            foreach (Paciente paciente in Program.Mock.ListaPacientes)
+            foreach (Recepcionista recepcionista in Program.Mock.ListaRecepcionistas)
             {
+                //(Int32 codigo, String nome, String cpf, String setor)
                 Console.WriteLine("-----------------------------");
-                Console.WriteLine($"Paciente: {paciente.CodigoPaciente}");
-                Console.WriteLine($"Nome: {paciente.Nome}");
-                Console.WriteLine($"CPF: {paciente.CGCCPF}");
-                Console.WriteLine($"Convenio: {paciente.Convenio}");
+                Console.WriteLine($"Recepcionista: {recepcionista.CodigoRecepcionista}");
+                Console.WriteLine($"Nome: {recepcionista.Nome}");
+                Console.WriteLine($"CPF: {recepcionista.CGCCPF}");
+                Console.WriteLine($"Setor: {recepcionista.Setor}");
                 Console.WriteLine("-----------------------------\n");
             }
             Console.ReadKey();
         }
-        public void CadastrarPaciente()
+        public void CadastrarRecepcionista()
         {
 
         }
-        public void AlterarPaciente()
+        public void AlterarRecepcionista()
         {
 
         }
-        public void ExcluirPaciente()
+        public void ExcluirRecepcionista()
         {
 
         }
