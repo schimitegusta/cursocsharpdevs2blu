@@ -11,21 +11,17 @@ namespace Devs2Blu.ProjetosAula.OOP3.Models.Model
     {
         public Int32 CodigoFornecedor { get; set; }
         public String TipoFornecedor { get; set; }
-        public Fornecedor()
-        {
-            TipoPessoa = TipoPessoa.PJ;
-        }
+        public Fornecedor() {}
         public Fornecedor(Int32 codigo, String nome, String cpf, String tipoFornecedor)
         {
             Codigo = codigo;
             Nome = nome;
             CGCCPF = cpf;
-            TipoPessoa = TipoPessoa.PJ;
             TipoFornecedor = tipoFornecedor;
+            TipoPessoa = TipoPessoa.PJ;
             
-
             Random rd = new Random();
-            CodigoFornecedor = Int32.Parse($"{codigo}{rd.Next(3000, 3999)}");
+            CodigoFornecedor = Int32.Parse($"{codigo}{rd.Next(1000, 3999)}");
         }
     }
 }

@@ -27,6 +27,7 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Utils
             CargaPacientes();
             CargaMedicos();
             CargaRecepcionistas();
+            CargaFornecedores();
         }
 
         public void CargaPacientes()
@@ -55,6 +56,15 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Utils
                 //Int32 codigo, String nome, String cpf, String setor
                 Recepcionista recepcionista = new Recepcionista(i, $"Recepcionista {i+1}", $"{i}11{i}11{i}111{i}", "Agendamento");
                 ListaRecepcionistas.Add(recepcionista);
+            }
+        }
+        public void CargaFornecedores()
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                //(Int32 codigo, String nome, String cpf, String tipoFornecedor)
+                Fornecedor fornecedor = new Fornecedor(i, $"Fornecedor: {i+1}", $"{i}22{i}22{i}222{i}", "Reabastecimento");
+                ListaFornecedores.Add(fornecedor);
             }
         }
     }
