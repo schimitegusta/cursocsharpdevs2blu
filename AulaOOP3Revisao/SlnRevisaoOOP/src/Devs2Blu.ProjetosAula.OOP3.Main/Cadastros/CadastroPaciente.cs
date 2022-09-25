@@ -11,10 +11,6 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
 {
     public class CadastroPaciente
     {
-        public CadastroPaciente()
-        {
-
-        }
         public void MenuCadastro()
         {
             Int32 opcao;
@@ -37,6 +33,9 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
                     case (int)MenuEnums.LISTAR:
                         ListarPacientes();
                         break;
+                    case (int)MenuEnums.CADASTRAR:
+                        CadastrarPaciente();
+                        break;
                     default:
                         break;
                 }
@@ -58,7 +57,20 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
         }
         public void CadastrarPaciente()
         {
+            Console.Clear();
 
+            string nome, cpf, convenio;
+
+            Console.Write($"Informe o Nome do Paciente: ");
+            nome = Console.ReadLine();
+            Console.Write($"Informe o CPF do Paciente: ");
+            cpf = Console.ReadLine();
+            Console.Write($"Informe o Convenio do Paciente: ");
+            convenio = Console.ReadLine();
+
+            Random rd = new Random();
+            Paciente paciente = new Paciente(rd.Next(11, 100), nome, cpf, convenio);
+            Program.Mock.ListaPacientes.Add(paciente);
         }
         public void AlterarPaciente()
         {

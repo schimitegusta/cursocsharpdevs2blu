@@ -11,7 +11,10 @@ namespace Devs2Blu.ProjetosAula.OOP3.Models.Model
     {
         public Int32 CodigoFornecedor { get; set; }
         public String TipoFornecedor { get; set; }
-        public Fornecedor() {}
+        public Fornecedor()
+        {
+            TipoPessoa = TipoPessoa.PJ;
+        }
         public Fornecedor(Int32 codigo, String nome, String cpf, String tipoFornecedor)
         {
             Codigo = codigo;

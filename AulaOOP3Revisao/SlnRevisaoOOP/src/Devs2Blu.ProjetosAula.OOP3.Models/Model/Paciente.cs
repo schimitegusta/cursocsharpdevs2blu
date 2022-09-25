@@ -23,6 +23,7 @@ namespace Devs2Blu.ProjetosAula.OOP3.Models.Model
             TipoPessoa = TipoPessoa.PF;
             Convenio = convenio;
 
+            //CodigoPaciente = new Guid();
             Random rd = new Random();
             CodigoPaciente = Int32.Parse($"{codigo}{rd.Next(100, 999)}");
         }
