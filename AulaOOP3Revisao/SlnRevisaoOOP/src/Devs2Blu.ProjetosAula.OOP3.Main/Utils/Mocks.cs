@@ -63,7 +63,7 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Utils
             for (int i = 0; i < 5; i++)
             {
                 //(Int32 codigo, String nome, String cpf, String tipoFornecedor)
-                Fornecedor fornecedor = new Fornecedor(i, $"Fornecedor: {i+1}", $"{i}22{i}22{i}222{i}", "Reabastecimento");
+                Fornecedor fornecedor = new Fornecedor(i, $"Fornecedor {i+1}", $"{i}22{i}22{i}222{i}", "Reabastecimento");
                 ListaFornecedores.Add(fornecedor);
             }
         }

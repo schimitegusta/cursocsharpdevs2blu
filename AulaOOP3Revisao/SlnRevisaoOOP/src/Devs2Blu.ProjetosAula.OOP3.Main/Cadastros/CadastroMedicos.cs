@@ -32,6 +32,9 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
                     case (int)MenuEnums.LISTAR:
                         ListarMedicos();
                         break;
+                    case (int)MenuEnums.CADASTRAR:
+                        CadastrarMedico();
+                        break;
                     default:
                         break;
                 }
@@ -55,7 +58,23 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
         }
         public void CadastrarMedico()
         {
+            Console.Clear();
 
+            string nome, cpf, especialidade;
+            int crm;
+
+            Console.Write($"Informe o Nome do Medico: ");
+            nome = Console.ReadLine();
+            Console.Write($"Informe o CPF do Medico: ");
+            cpf = Console.ReadLine();
+            Console.Write($"Informe o CRM do Medico: ");
+            Int32.TryParse(Console.ReadLine(), out crm);
+            Console.Write($"Informe a Especialidade do Medico: ");
+            especialidade = Console.ReadLine();
+
+            Random rd = new Random();
+            Medico medico = new Medico(rd.Next(11, 100), nome, cpf, crm, especialidade);
+            Program.Mock.ListaMedicos.Add(medico);
         }
         public void AlterarMedico()
         {

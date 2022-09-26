@@ -32,6 +32,9 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
                     case (int)MenuEnums.LISTAR:
                         ListarFornecedores();
                         break;
+                    case (int)MenuEnums.CADASTRAR:
+                        CadastrarFornecedor();
+                        break;
                     default:
                         break;
                 }
@@ -54,7 +57,22 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
         }
         public void CadastrarFornecedor()
         {
+            Console.Clear();
 
+            string nome, cpf, setor, tipoFornecedor;
+
+            Console.Write($"Informe o Nome do Fornecedor: ");
+            nome = Console.ReadLine();
+            Console.Write($"Informe o CPF do Fornecedor: ");
+            cpf = Console.ReadLine();
+            Console.Write($"Informe o Setor do Fornecedor: ");
+            setor = Console.ReadLine();
+            Console.Write($"Informe o tipo do Fornecedor: ");
+            tipoFornecedor = Console.ReadLine();
+
+            Random rd = new Random();
+            Fornecedor fornecedor = new Fornecedor(rd.Next(1000, 4000), nome, cpf, tipoFornecedor);
+            Program.Mock.ListaFornecedores.Add(fornecedor);
         }
         public void AlterarFornecedor()
         {

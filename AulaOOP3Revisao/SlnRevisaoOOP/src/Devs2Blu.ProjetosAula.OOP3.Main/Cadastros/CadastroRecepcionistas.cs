@@ -32,6 +32,9 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
                     case (int)MenuEnums.LISTAR:
                         ListarRecepcionistas();
                         break;
+                    case (int)MenuEnums.CADASTRAR:
+                        CadastrarRecepcionista();
+                        break;
                     default:
                         break;
                 }
@@ -54,7 +57,20 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
         }
         public void CadastrarRecepcionista()
         {
+            Console.Clear();
 
+            string nome, cpf, setor;
+
+            Console.Write($"Informe o Nome do Recepcionista: ");
+            nome = Console.ReadLine();
+            Console.Write($"Informe o CPF do Recepcionista: ");
+            cpf = Console.ReadLine();
+            Console.Write($"Informe o Setor do Recepcionista: ");
+            setor = Console.ReadLine();
+
+            Random rd = new Random();
+            Recepcionista recepcionista = new Recepcionista(rd.Next(11, 100), nome, cpf, setor);
+            Program.Mock.ListaRecepcionistas.Add(recepcionista);
         }
         public void AlterarRecepcionista()
         {
