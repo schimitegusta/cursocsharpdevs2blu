@@ -20,7 +20,8 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
             Console.WriteLine("|-------------------------------------|");
             Console.WriteLine("|      1 -   Lista de Medicos         |");
             Console.WriteLine("|      2 - Cadastro de Medicos        |");
-            Console.WriteLine("|      3 -   Alterar Medicos          |");
+            Console.WriteLine("|      3 -    Alterar Medicos         |");
+            Console.WriteLine("|      4 -    Exluir Medicos          |");
             Console.WriteLine("|-------------------------------------|");
             Console.WriteLine("|      0 -        VOLTAR              |");
             Console.WriteLine("|_____________________________________|");

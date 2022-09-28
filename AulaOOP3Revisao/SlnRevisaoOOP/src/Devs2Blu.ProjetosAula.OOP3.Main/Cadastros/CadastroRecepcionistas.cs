@@ -20,7 +20,8 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
             Console.WriteLine("|-------------------------------------|");
             Console.WriteLine("|    1 -  Lista de Recepcionistas     |");
             Console.WriteLine("|    2 - Cadastro de Recepcionista    |");
-            Console.WriteLine("|    3 -   Alterar Recepcionista      |");
+            Console.WriteLine("|    3 -  Alterar Recepcionista       |");
+            Console.WriteLine("|    4 -   Exluir Recepcionista       |");
             Console.WriteLine("|-------------------------------------|");
             Console.WriteLine("|      0 -        VOLTAR              |");
             Console.WriteLine("|_____________________________________|");

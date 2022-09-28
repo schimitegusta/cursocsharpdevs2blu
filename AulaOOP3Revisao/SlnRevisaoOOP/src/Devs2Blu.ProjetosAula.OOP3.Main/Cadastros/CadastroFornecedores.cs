@@ -21,6 +21,7 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
             Console.WriteLine("|    1 -     Lista de Fornecedores    |");
             Console.WriteLine("|    2 -    Cadastro de Fornecedor    |");
             Console.WriteLine("|    3 -      Alterar Fornecedor      |");
+            Console.WriteLine("|    4 -       Exluir Fornecedor      |");
             Console.WriteLine("|-------------------------------------|");
             Console.WriteLine("|      0 -        VOLTAR              |");
             Console.WriteLine("|_____________________________________|");
