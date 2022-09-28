@@ -1,4 +1,5 @@
-﻿using Devs2Blu.ProjetosAula.OOP3.Main.Utils.Enums;
+﻿using Devs2Blu.ProjetosAula.OOP3.Main.Interfaces;
+using Devs2Blu.ProjetosAula.OOP3.Main.Utils.Enums;
 using Devs2Blu.ProjetosAula.OOP3.Models.Model;
 using System;
 using System.Collections.Generic;
@@ -8,39 +9,48 @@ using System.Threading.Tasks;
 
 namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
 {
-    public class CadastroMedicos
+    public class CadastroMedicos : IMenuCadastro
     {
-        public void MenuCadastro()
+        public Int32 MenuCadastro()
         {
             Int32 opcao;
-            do
-            {
-                Console.Clear();
-                Console.WriteLine(" _____________________________________");
-                Console.WriteLine("|          Cadastro de Medicos        |");
-                Console.WriteLine("|-------------------------------------|");
-                Console.WriteLine("|      1 -   Lista de Medicos         |");
-                Console.WriteLine("|      2 - Cadastro de Medicos        |");
-                Console.WriteLine("|      3 -   Alterar Medicos          |");
-                Console.WriteLine("|-------------------------------------|");
-                Console.WriteLine("|      0 -        VOLTAR              |");
-                Console.WriteLine("|_____________________________________|");
-                Int32.TryParse(Console.ReadLine(), out opcao);
-
-                switch (opcao)
-                {
-                    case (int)MenuEnums.LISTAR:
-                        ListarMedicos();
-                        break;
-                    case (int)MenuEnums.CADASTRAR:
-                        CadastrarMedico();
-                        break;
-                    default:
-                        break;
-                }
-            } while (!opcao.Equals((int)MenuEnums.SAIR));
+            Console.Clear();
+            Console.WriteLine(" _____________________________________");
+            Console.WriteLine("|          Cadastro de Medicos        |");
+            Console.WriteLine("|-------------------------------------|");
+            Console.WriteLine("|      1 -   Lista de Medicos         |");
+            Console.WriteLine("|      2 - Cadastro de Medicos        |");
+            Console.WriteLine("|      3 -   Alterar Medicos          |");
+            Console.WriteLine("|-------------------------------------|");
+            Console.WriteLine("|      0 -        VOLTAR              |");
+            Console.WriteLine("|_____________________________________|");
+            Int32.TryParse(Console.ReadLine(), out opcao);
+            return opcao;
         }
-        public void ListarMedicos()
+        public void Listar()
+        {
+            ListarMedicos();
+        }
+
+        public void Cadastrar()
+        {
+            Medico medico = new Medico();
+            CadastrarMedico(medico);
+        }
+
+        public void Alterar()
+        {
+            Medico medico = new Medico();
+            AlterarMedico(medico);
+        }
+
+        public void Exlcuir()
+        {
+            Medico medico = new Medico();
+            ExcluirMedico(medico);
+        }
+        #region FACADE
+        private void ListarMedicos()
         {
             Console.Clear();
             foreach (Medico medico in Program.Mock.ListaMedicos)
@@ -56,7 +66,7 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
             }
             Console.ReadKey();
         }
-        public void CadastrarMedico()
+        private void CadastrarMedico(Medico medico)
         {
             Console.Clear();
 
@@ -73,16 +83,17 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
             especialidade = Console.ReadLine();
 
             Random rd = new Random();
-            Medico medico = new Medico(rd.Next(11, 100), nome, cpf, crm, especialidade);
+            medico = new Medico(rd.Next(11, 100), nome, cpf, crm, especialidade);
             Program.Mock.ListaMedicos.Add(medico);
         }
-        public void AlterarMedico()
+        private void AlterarMedico(Medico medico)
         {
 
         }
-        public void ExcluirMedico()
+        private void ExcluirMedico(Medico medico)
         {
 
         }
+        #endregion
     }
 }

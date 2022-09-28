@@ -1,4 +1,5 @@
-﻿using Devs2Blu.ProjetosAula.OOP3.Main.Utils.Enums;
+﻿using Devs2Blu.ProjetosAula.OOP3.Main.Interfaces;
+using Devs2Blu.ProjetosAula.OOP3.Main.Utils.Enums;
 using Devs2Blu.ProjetosAula.OOP3.Models.Model;
 using System;
 using System.Collections.Generic;
@@ -8,38 +9,47 @@ using System.Threading.Tasks;
 
 namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
 {
-    public class CadastroFornecedores
+    public class CadastroFornecedores : IMenuCadastro
     {
-        public void MenuCadastro()
+        public Int32 MenuCadastro()
         {
             Int32 opcao;
-            do
-            {
-                Console.Clear();
-                Console.WriteLine(" _____________________________________");
-                Console.WriteLine("|        Cadastro de Fornecedores     |");
-                Console.WriteLine("|-------------------------------------|");
-                Console.WriteLine("|    1 -     Lista de Fornecedores    |");
-                Console.WriteLine("|    2 -    Cadastro de Fornecedor    |");
-                Console.WriteLine("|    3 -      Alterar Fornecedor      |");
-                Console.WriteLine("|-------------------------------------|");
-                Console.WriteLine("|      0 -        VOLTAR              |");
-                Console.WriteLine("|_____________________________________|");
-                Int32.TryParse(Console.ReadLine(), out opcao);
-
-                switch (opcao)
-                {
-                    case (int)MenuEnums.LISTAR:
-                        ListarFornecedores();
-                        break;
-                    case (int)MenuEnums.CADASTRAR:
-                        CadastrarFornecedor();
-                        break;
-                    default:
-                        break;
-                }
-            } while (!opcao.Equals((int)MenuEnums.SAIR));
+            Console.Clear();
+            Console.WriteLine(" _____________________________________");
+            Console.WriteLine("|        Cadastro de Fornecedores     |");
+            Console.WriteLine("|-------------------------------------|");
+            Console.WriteLine("|    1 -     Lista de Fornecedores    |");
+            Console.WriteLine("|    2 -    Cadastro de Fornecedor    |");
+            Console.WriteLine("|    3 -      Alterar Fornecedor      |");
+            Console.WriteLine("|-------------------------------------|");
+            Console.WriteLine("|      0 -        VOLTAR              |");
+            Console.WriteLine("|_____________________________________|");
+            Int32.TryParse(Console.ReadLine(), out opcao);
+            return opcao;
         }
+        public void Listar()
+        {
+            ListarFornecedores();
+        }
+
+        public void Cadastrar()
+        {
+            Fornecedor fornecedor = new Fornecedor();
+            CadastrarFornecedor(fornecedor);
+        }
+
+        public void Alterar()
+        {
+            Fornecedor fornecedor = new Fornecedor();
+            AlterarFornecedor(fornecedor);
+        }
+
+        public void Exlcuir()
+        {
+            Fornecedor fornecedor = new Fornecedor();
+            ExcluirFornecedor(fornecedor);
+        }
+        #region FACADE
         public void ListarFornecedores()
         {
             Console.Clear();
@@ -55,7 +65,7 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
             }
             Console.ReadKey();
         }
-        public void CadastrarFornecedor()
+        public void CadastrarFornecedor(Fornecedor fornecedor)
         {
             Console.Clear();
 
@@ -71,16 +81,17 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
             tipoFornecedor = Console.ReadLine();
 
             Random rd = new Random();
-            Fornecedor fornecedor = new Fornecedor(rd.Next(1000, 4000), nome, cpf, tipoFornecedor);
+            fornecedor = new Fornecedor(rd.Next(1000, 4000), nome, cpf, tipoFornecedor);
             Program.Mock.ListaFornecedores.Add(fornecedor);
         }
-        public void AlterarFornecedor()
+        public void AlterarFornecedor(Fornecedor fornecedor)
         {
 
         }
-        public void ExcluirFornecedor()
+        public void ExcluirFornecedor(Fornecedor fornecedor)
         {
 
         }
+        #endregion
     }
 }

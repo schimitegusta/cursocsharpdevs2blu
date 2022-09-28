@@ -3,45 +3,56 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Devs2Blu.ProjetosAula.OOP3.Main.Interfaces;
 using Devs2Blu.ProjetosAula.OOP3.Main.Utils;
 using Devs2Blu.ProjetosAula.OOP3.Main.Utils.Enums;
 using Devs2Blu.ProjetosAula.OOP3.Models.Model;
 
 namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
 {
-    public class CadastroPaciente
+    public class CadastroPaciente : IMenuCadastro
     {
-        public void MenuCadastro()
+        public Int32 MenuCadastro()
         {
             Int32 opcao;
-            do
-            {
-                Console.Clear();
-                Console.WriteLine(" _____________________________________");
-                Console.WriteLine("|        Cadastro de Pacientes        |");
-                Console.WriteLine("|-------------------------------------|");
-                Console.WriteLine("|      1 -   Lista de Pacientes       |");
-                Console.WriteLine("|      2 - Cadastro de Pacientes      |");
-                Console.WriteLine("|      3 -   Alterar Pacientes        |");
-                Console.WriteLine("|-------------------------------------|");
-                Console.WriteLine("|      0 -        VOLTAR              |");
-                Console.WriteLine("|_____________________________________|");
-                Int32.TryParse(Console.ReadLine(), out opcao);
-
-                switch (opcao)
-                {
-                    case (int)MenuEnums.LISTAR:
-                        ListarPacientes();
-                        break;
-                    case (int)MenuEnums.CADASTRAR:
-                        CadastrarPaciente();
-                        break;
-                    default:
-                        break;
-                }
-            } while (!opcao.Equals((int)MenuEnums.SAIR));
+            Console.Clear();
+            Console.WriteLine(" _____________________________________");
+            Console.WriteLine("|        Cadastro de Pacientes        |");
+            Console.WriteLine("|-------------------------------------|");
+            Console.WriteLine("|      1 -   Lista de Pacientes       |");
+            Console.WriteLine("|      2 - Cadastro de Pacientes      |");
+            Console.WriteLine("|      3 -   Alterar Pacientes        |");
+            Console.WriteLine("|-------------------------------------|");
+            Console.WriteLine("|      0 -        VOLTAR              |");
+            Console.WriteLine("|_____________________________________|");
+            Int32.TryParse(Console.ReadLine(), out opcao);
+            return opcao;
         }
-        public void ListarPacientes()
+        public void Listar()
+        {
+            ListarPacientes();
+        }
+
+        public void Cadastrar()
+        {
+            Paciente paciente = new Paciente();
+            CadastrarPaciente(paciente);
+        }
+
+        public void Alterar()
+        {
+            Paciente paciente = new Paciente();
+            AlterarPaciente(paciente);
+        }
+
+        public void Exlcuir()
+        {
+            Paciente paciente = new Paciente();
+            AlterarPaciente(paciente);
+        }
+
+        #region FACADE
+        private void ListarPacientes()
         {
             Console.Clear();
             foreach (Paciente paciente in Program.Mock.ListaPacientes)
@@ -55,7 +66,7 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
             }
             Console.ReadKey();
         }
-        public void CadastrarPaciente()
+        private void CadastrarPaciente(Paciente paciente)
         {
             Console.Clear();
 
@@ -69,16 +80,17 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
             convenio = Console.ReadLine();
 
             Random rd = new Random();
-            Paciente paciente = new Paciente(rd.Next(11, 100), nome, cpf, convenio);
+            paciente = new Paciente(rd.Next(11, 100), nome, cpf, convenio);
             Program.Mock.ListaPacientes.Add(paciente);
         }
-        public void AlterarPaciente()
+        private void AlterarPaciente(Paciente paciente)
         {
 
         }
-        public void ExcluirPaciente()
+        private void ExcluirPaciente(Paciente paciente)
         {
 
         }
+        #endregion
     }
 }
