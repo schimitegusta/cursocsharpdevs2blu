@@ -42,10 +42,14 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Utils
         public void CargaMedicos()
         {
             Random rd = new Random();
+            string crm;
+            int numCRM;
             for (int i = 0; i < 5; i++)
             {
                 //Int32 codigo, String nome, String cpf, Int32 crm, String especialidade
-                Medico medico = new Medico(i, $"Medico {i + 1}", $"{i}32{i}65{i}198{i}", rd.Next(1, 999), "Oftamologia");
+                numCRM = rd.Next(1, 999);
+                crm = numCRM.ToString();
+                Medico medico = new Medico(i, $"Medico {i + 1}", $"{i}32{i}65{i}198{i}", crm, "Oftamologia");
                 ListaMedicos.Add(medico);
             }
         }

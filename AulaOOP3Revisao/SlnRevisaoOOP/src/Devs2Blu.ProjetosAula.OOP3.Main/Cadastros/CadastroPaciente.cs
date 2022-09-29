@@ -35,7 +35,20 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
         }
         public void Cadastrar()
         {
-            Paciente paciente = new Paciente();
+            Paciente paciente;
+            Console.Clear();
+
+            string nome, cpf, convenio;
+
+            Console.Write($"Informe o Nome do Paciente: ");
+            nome = Console.ReadLine();
+            Console.Write($"Informe o CPF do Paciente: ");
+            cpf = Console.ReadLine();
+            Console.Write($"Informe o Convenio do Paciente: ");
+            convenio = Console.ReadLine();
+
+            Random rd = new Random();
+            paciente = new Paciente(rd.Next(11, 100), nome, cpf, convenio);
             CadastrarPaciente(paciente);
         }
         public void Alterar()
@@ -110,11 +123,11 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
                 Console.WriteLine($"Paciente: {paciente.CodigoPaciente} | Nome: {paciente.Nome} | CPF: {paciente.CGCCPF} | Convenio: {paciente.Convenio}");
                 Console.WriteLine($"Deseja excluir o {paciente.Nome}? S/N");
                 excluir = (Console.ReadLine().ToUpper().Equals("S")) ? true : false;
-                ExcluirPaciente(paciente);
 
                 if (excluir)
                 {
                     Console.Clear();
+                    ExcluirPaciente(paciente);
                     Console.WriteLine("Paciente excluido com sucesso!");
                     Console.WriteLine("Digite S para continuar a excluir...");
                     excluir = (Console.ReadLine().ToUpper().Equals("S")) ? true : false;
@@ -156,19 +169,6 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
         }
         private void CadastrarPaciente(Paciente paciente)
         {
-            Console.Clear();
-
-            string nome, cpf, convenio;
-
-            Console.Write($"Informe o Nome do Paciente: ");
-            nome = Console.ReadLine();
-            Console.Write($"Informe o CPF do Paciente: ");
-            cpf = Console.ReadLine();
-            Console.Write($"Informe o Convenio do Paciente: ");
-            convenio = Console.ReadLine();
-
-            Random rd = new Random();
-            paciente = new Paciente(rd.Next(11, 100), nome, cpf, convenio);
             Program.Mock.ListaPacientes.Add(paciente);
         }
         private void AlterarPaciente(Paciente paciente)
