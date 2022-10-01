@@ -48,7 +48,7 @@ JOIN prestador as pre
 	ON (p.id = pre.id_pessoa)
 ;
 
-/*PESSOAS, PRESTADORES E PACIENTES JUNTOS*/
+/*PESSOAS, PRESTADORES E PACIENTES NA MESMA TABELA*/
 select p.id as codigo_pessoa,
         p.nome,
         p.cgccpf,
