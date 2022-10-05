@@ -7,14 +7,16 @@ using Devs2Blu.ProjetosAula.SistemaCadastro.Models.Enums;
 
 namespace Devs2Blu.ProjetosAula.SistemaCadastro.Models.Model
 {
-    public class Medico : Pessoa
+    public class Medico
     {
         public Int32 Id { get; set; }
         public String CRM { get; set; }
         public String Especialidade { get; set; }
+        public Pessoa Pessoa { get; set; }
         public Medico()
         {
-            TipoPessoa = TipoPessoa.PF;
+            Pessoa = new Pessoa();
+            Pessoa.TipoPessoa = TipoPessoa.PF;
         }
     }
 }

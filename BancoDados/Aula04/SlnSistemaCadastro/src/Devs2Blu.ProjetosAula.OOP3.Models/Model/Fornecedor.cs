@@ -7,13 +7,15 @@ using Devs2Blu.ProjetosAula.SistemaCadastro.Models.Enums;
 
 namespace Devs2Blu.ProjetosAula.SistemaCadastro.Models.Model
 {
-    public class Fornecedor : Pessoa
+    public class Fornecedor
     {
         public Int32 Id { get; set; }
         public String TipoFornecedor { get; set; }
+        public Pessoa Pessoa { get; set; }
         public Fornecedor()
         {
-            TipoPessoa = TipoPessoa.PJ;
+            Pessoa = new Pessoa();
+            Pessoa.TipoPessoa = TipoPessoa.PJ;
         }
     }
 }
