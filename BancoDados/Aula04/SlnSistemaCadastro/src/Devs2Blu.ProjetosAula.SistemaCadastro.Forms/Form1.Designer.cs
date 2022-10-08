@@ -347,7 +347,7 @@
             this.gpListastagem.Controls.Add(this.gridPacientes);
             this.gpListastagem.Location = new System.Drawing.Point(467, 27);
             this.gpListastagem.Name = "gpListastagem";
-            this.gpListastagem.Size = new System.Drawing.Size(469, 333);
+            this.gpListastagem.Size = new System.Drawing.Size(547, 333);
             this.gpListastagem.TabIndex = 3;
             this.gpListastagem.TabStop = false;
             // 
@@ -359,7 +359,7 @@
             this.gridPacientes.Location = new System.Drawing.Point(6, 19);
             this.gridPacientes.Name = "gridPacientes";
             this.gridPacientes.ReadOnly = true;
-            this.gridPacientes.Size = new System.Drawing.Size(457, 308);
+            this.gridPacientes.Size = new System.Drawing.Size(535, 308);
             this.gridPacientes.TabIndex = 0;
             // 
             // menuStrip1
@@ -370,7 +370,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(940, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1026, 24);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -415,7 +415,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(940, 368);
+            this.ClientSize = new System.Drawing.Size(1026, 368);
             this.Controls.Add(this.gpListastagem);
             this.Controls.Add(this.gpFormCadastro);
             this.Controls.Add(this.menuStrip1);

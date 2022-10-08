@@ -46,6 +46,24 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Data
             }
         }
 
+        public MySqlDataReader GetPessoas()
+        {
+            MySqlConnection conn = ConnectionMySQL.GetConnection();
+
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand(SQL_SELECT_PESSOA, conn);
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+
+                return dataReader;
+            }
+            catch (MySqlException myExc)
+            {
+                MessageBox.Show(myExc.Message, "Erro de MySQL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+        }
+
         #region SQLs
         private const String SQL_INSERT_PESSOA = @"INSERT INTO pessoa
 (nome,
@@ -87,6 +105,7 @@ VALUES
 @paciente_risco,
 'A',
 0)";
+        private const String SQL_SELECT_PESSOA = @"SELECT id, nome, cgccpf, tipopessoa, flstatus FROM pessoa";
         #endregion
     }
 }

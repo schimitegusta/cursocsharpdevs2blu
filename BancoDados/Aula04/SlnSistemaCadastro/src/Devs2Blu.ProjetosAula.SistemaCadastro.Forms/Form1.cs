@@ -33,6 +33,11 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             cboConvenio.DisplayMember = "nome";
             cboConvenio.ValueMember = "id";
         }
+        private void PopulaDataGridPessoa()
+        {
+            var listPessoas = PacienteRepository.GetPessoas();
+            gridPacientes.DataSource = new BindingSource(listPessoas, null);
+        }
         private bool ValidaFormCadastro()
         {
             if (txtNome.Text.Equals(""))
@@ -73,6 +78,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             }*/
             #endregion
             PopulaComboConveio();
+            PopulaDataGridPessoa();
         }
         private void rdTipoPessoaPF_CheckedChanged(object sender, EventArgs e)
         {
@@ -92,7 +98,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             {
                 Paciente paciente = new Paciente();
                 paciente.Pessoa.Nome = txtNome.Text;
-                paciente.Pessoa.CGCCPF = txtCGCCPF.Text;
+                paciente.Pessoa.CGCCPF = txtCGCCPF.Text.Replace(',','.');
                 paciente.Convenio.Id = (int)cboConvenio.SelectedValue;
 
                 var pacienteResult = PacienteRepository.Save(paciente);
@@ -100,6 +106,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
                 if (pacienteResult.Pessoa.Id > 0)
                 {
                     MessageBox.Show($"Pessoa {paciente.Pessoa.Id} - {paciente.Pessoa.Nome} salva com sucesso!", "Adicionar pessoa", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    PopulaDataGridPessoa();
                 }
             }
         }
