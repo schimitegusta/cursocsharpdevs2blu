@@ -5,6 +5,9 @@ select *
 from pessoa;
 
 select *
+from paciente;
+
+select *
 from endereco;
 
 select *

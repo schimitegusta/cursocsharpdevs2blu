@@ -1,0 +1,6 @@
+D:\dev\devs2blu\BancoDados\Aula04\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.OOP3.Models\bin\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Models.dll
+D:\dev\devs2blu\BancoDados\Aula04\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.OOP3.Models\bin\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Models.pdb
+D:\dev\devs2blu\BancoDados\Aula04\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.OOP3.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Models.csproj.AssemblyReference.cache
+D:\dev\devs2blu\BancoDados\Aula04\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.OOP3.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Models.csproj.CoreCompileInputs.cache
+D:\dev\devs2blu\BancoDados\Aula04\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.OOP3.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Models.dll
+D:\dev\devs2blu\BancoDados\Aula04\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.OOP3.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Models.pdb
