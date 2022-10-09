@@ -18,6 +18,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
         public MySqlConnection Conn { get; private set; }
         public ConvenioRepository ConvenioRepository = new ConvenioRepository();
         public PacienteRepository PacienteRepository = new PacienteRepository();
+        public MySqlException myExc { get; set; }
 
         public Form1()
         {
@@ -35,31 +36,95 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
         }
         private void PopulaDataGridPessoa()
         {
-            var listPessoas = PacienteRepository.GetPessoas();
-            gridPacientes.DataSource = new BindingSource(listPessoas, null);
+            var listPacientes = PacienteRepository.GetPessoas();
+            gridPacientes.DataSource = new BindingSource(listPacientes, null);
         }
         private bool ValidaFormCadastro()
         {
             if (txtNome.Text.Equals(""))
+            {
+                MessageBox.Show("Por Favor, Informe seu Nome!");
                 return false;
+            }
             if (txtCGCCPF.Text.Equals(""))
+            {
+                MessageBox.Show("Por Favor, Informe seu CPF!");
                 return false;
-           /* if (cboConvenio.SelectedIndex == -1)
+            }
+            if (cboConvenio.SelectedIndex == -1)
+            {
+                MessageBox.Show("Por Favor, Informe seu Convenio!");
                 return false;
+            }
             if (mskCEP.Text.Equals(""))
+            {
+                MessageBox.Show("Por Favor, Informe seu CEP!");
                 return false;
+            }
             if (cboUF.SelectedIndex == -1)
+            {
+                MessageBox.Show("Por Favor, Informe seu UF!");
                 return false;
+            }
             if (txtCidade.Text.Equals(""))
+            {
+                MessageBox.Show("Por Favor, Informe sua Cidade!");
                 return false;
+            }
             if (txtRua.Text.Equals(""))
+            {
+                MessageBox.Show("Por Favor, Informe sua Rua!");
                 return false;
+            }
             if (txtNumero.Text.Equals(""))
+            {
+                MessageBox.Show("Por Favor, Informe seu Numero!");
                 return false;
+            }
             if (txtBairro.Text.Equals(""))
-                return false;*/
+            {
+                MessageBox.Show("Por Favor, Informe seu Bairro!");
+                return false;
+            }
+            if (txtNumeroProntuario.Text.Equals(""))
+            {
+                MessageBox.Show("Por Favor, Informe o Numero de Prontuario!");
+                return false;
+            }
+            if (txtPacienteRisco.Text.Equals(""))
+            {
+                MessageBox.Show("Por Favor, Informe o Risco do Paciente!");
+                return false;
+            }
 
             return true;
+        }
+        private void LimpaForms()
+        {
+            txtNome.Text = "";
+            txtCGCCPF.Text = "";
+
+            if (lblCGCCPF.Text == "CPF")
+            {
+                txtCGCCPF.Mask = "000.000.000-00";
+            }
+            else if (lblCGCCPF.Text == "CNPJ")
+            {
+                txtCGCCPF.Mask = "00.000.000/000-00";
+            }
+
+            cboConvenio.SelectedValue = 0;
+
+            mskCEP.Text = "";
+            mskCEP.Mask = "00.000-000";
+            txtRua.Text = "";
+            txtNumero.Text = "";
+            txtBairro.Text = "";
+            txtCidade.Text = "";
+            cboUF.Text = "";
+
+            txtNumeroProntuario.Text = "";
+            txtPacienteRisco.Text = "";
         }
 
         #endregion
@@ -68,6 +133,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            LimpaForms();
             #region TesteConexao
             /*Conn = ConnectionMySQL.GetConnection();
 
@@ -96,21 +162,46 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
         {
             if (ValidaFormCadastro())
             {
+                Pessoa pessoa = new Pessoa();
+                pessoa.Nome = txtNome.Text;
+                pessoa.CGCCPF = txtCGCCPF.Text.Replace(',', '.');
+
+                Convenio convenio = new Convenio();
+                convenio.Id = (int)cboConvenio.SelectedValue;
+
+                Endereco endereco = new Endereco();
+                endereco.CEP = mskCEP.Text.Replace(',', '.');
+                endereco.Rua = txtRua.Text;
+                endereco.Numero = Int32.Parse(txtNumero.Text);
+                endereco.Bairro = txtBairro.Text;
+                endereco.Cidade = txtCidade.Text;
+                endereco.UF = cboUF.Text;
+
                 Paciente paciente = new Paciente();
-                paciente.Pessoa.Nome = txtNome.Text;
-                paciente.Pessoa.CGCCPF = txtCGCCPF.Text.Replace(',','.');
-                paciente.Convenio.Id = (int)cboConvenio.SelectedValue;
+                paciente.NrProntuario = Int32.Parse(txtNumeroProntuario.Text);
+                paciente.PacienteRisco = txtPacienteRisco.Text;
 
-                var pacienteResult = PacienteRepository.Save(paciente);
+                var pacienteResult = PacienteRepository.Save(pessoa, endereco, paciente, convenio);
 
-                if (pacienteResult.Pessoa.Id > 0)
+                if (pacienteResult.Id > 0)
                 {
-                    MessageBox.Show($"Pessoa {paciente.Pessoa.Id} - {paciente.Pessoa.Nome} salva com sucesso!", "Adicionar pessoa", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show($"Paciente {paciente.Pessoa.Id} - {pessoa.Nome} salvo com sucesso!", "Adicionar paciente", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     PopulaDataGridPessoa();
+                    LimpaForms();
                 }
             }
         }
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            LimpaForms();
+        }
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.Show();
+        }
 
         #endregion
+
     }
 }

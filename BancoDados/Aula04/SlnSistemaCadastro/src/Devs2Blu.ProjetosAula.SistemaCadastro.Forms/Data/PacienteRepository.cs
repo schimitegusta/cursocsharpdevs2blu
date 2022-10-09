@@ -11,14 +11,16 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Data
 {
     public class PacienteRepository
     {
-        public Paciente Save(Paciente paciente)
+        public Pessoa Save(Pessoa pessoa, Endereco endereco, Paciente paciente, Convenio convenio)
         {
-            MySqlConnection conn = ConnectionMySQL.GetConnection();
-
             try
             {
-                paciente.Pessoa.Id = SavePessoa(paciente, conn);
-                return paciente;
+                MySqlConnection conn = ConnectionMySQL.GetConnection();
+                pessoa.Id = SavePessoa(pessoa, conn);
+                EnderecoRepository.SaveEndereco(endereco, conn, pessoa.Id);
+                paciente.Id = SavePaciente(paciente, conn, pessoa.Id, convenio.Id);
+
+                return pessoa;
             }
             catch (MySqlException myExc)
             {
@@ -27,14 +29,33 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Data
             }
         }
 
-        private Int32 SavePessoa(Paciente paciente, MySqlConnection conn)
+        private Int32 SavePessoa(Pessoa pessoa, MySqlConnection conn)
         {
             try
             {
                 MySqlCommand cmd = new MySqlCommand(SQL_INSERT_PESSOA, conn);
-                cmd.Parameters.Add("@nome", MySqlDbType.VarChar, 50).Value = paciente.Pessoa.Nome;
-                cmd.Parameters.Add("@cgccpf", MySqlDbType.VarChar, 25).Value = paciente.Pessoa.CGCCPF;
-                cmd.Parameters.Add("@tipopessoa", MySqlDbType.Enum).Value = paciente.Pessoa.TipoPessoa;
+                cmd.Parameters.Add("@nome", MySqlDbType.VarChar, 50).Value = pessoa.Nome;
+                cmd.Parameters.Add("@cgccpf", MySqlDbType.VarChar, 25).Value = pessoa.CGCCPF;
+                cmd.Parameters.Add("@tipopessoa", MySqlDbType.Enum).Value = pessoa.TipoPessoa;
+
+                cmd.ExecuteNonQuery();
+                return (Int32)cmd.LastInsertedId;
+            }
+            catch (MySqlException myExc)
+            {
+                MessageBox.Show(myExc.Message, "Erro de MySQL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+        }
+        private Int32 SavePaciente(Paciente paciente, MySqlConnection conn, Int32 idPessoa, Int32 idConvenio)
+        {
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand(SQL_INSERT_PACIENTE, conn);
+                cmd.Parameters.Add("@id_pessoa", MySqlDbType.Int32).Value = idPessoa;
+                cmd.Parameters.Add("@id_convenio", MySqlDbType.Int32).Value = idConvenio;
+                cmd.Parameters.Add("@numero_prontuario", MySqlDbType.Int32).Value = paciente.NrProntuario;
+                cmd.Parameters.Add("@paciente_risco", MySqlDbType.VarChar, 5).Value = paciente.PacienteRisco;
 
                 cmd.ExecuteNonQuery();
                 return (Int32)cmd.LastInsertedId;
@@ -52,7 +73,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Data
 
             try
             {
-                MySqlCommand cmd = new MySqlCommand(SQL_SELECT_PESSOA, conn);
+                MySqlCommand cmd = new MySqlCommand(SQL_SELECT_PESSOA_ENDERECO, conn);
                 MySqlDataReader dataReader = cmd.ExecuteReader();
 
                 return dataReader;
@@ -75,22 +96,6 @@ VALUES
 @cgccpf,
 @tipopessoa,
 'A')";
-        private const String SQL_INSERT_ENDERECO = @"INSERT INTO endereco
-(id_pessoa,
-CEP,
-rua,
-numero,
-bairro,
-cidade,
-uf)
-VALUES
-(@idPessoa,
-@CEP,
-@rua,
-@numero,
-@bairro,
-@cidade,
-@uf)";
         private const String SQL_INSERT_PACIENTE = @"INSERT INTO paciente
 (id_pessoa,
 id_convenio,
@@ -106,6 +111,8 @@ VALUES
 'A',
 0)";
         private const String SQL_SELECT_PESSOA = @"SELECT id, nome, cgccpf, tipopessoa, flstatus FROM pessoa";
+        private const String SQL_SELECT_PACIENTE = @"SELECT id_pessoa, id_convenio, numero_prontuario, paciente_risco, flstatus, flobito FROM paciente";
+        private const String SQL_SELECT_PESSOA_ENDERECO = @"SELECT * FROM pessoa p JOIN endereco e ON p.id = e.id_pessoa";
         #endregion
     }
 }

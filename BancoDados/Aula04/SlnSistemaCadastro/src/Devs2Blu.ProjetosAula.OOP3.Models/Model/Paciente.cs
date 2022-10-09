@@ -12,6 +12,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Models.Model
         public Int32 Id { get; set; }
         public Pessoa Pessoa { get; set; }
         public Convenio Convenio { get; set; }
+        public Paciente paciente { get; set; }
         public Int32 NrProntuario { get; set; }
         public String PacienteRisco { get; set; }
         public Int32 FlObito { get; set; }
@@ -21,8 +22,8 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Models.Model
         {
             Pessoa = new Pessoa();
             Convenio = new Convenio();
-            FlObito = 0;
             Status = FlStatus.A;
+            FlObito = 0;
 
             Pessoa.TipoPessoa = TipoPessoa.PF;
         }
