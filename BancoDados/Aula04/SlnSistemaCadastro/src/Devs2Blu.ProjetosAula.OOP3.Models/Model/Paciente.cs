@@ -24,7 +24,6 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Models.Model
             Convenio = new Convenio();
             Status = FlStatus.A;
             FlObito = 0;
-
             Pessoa.TipoPessoa = TipoPessoa.PF;
         }
 

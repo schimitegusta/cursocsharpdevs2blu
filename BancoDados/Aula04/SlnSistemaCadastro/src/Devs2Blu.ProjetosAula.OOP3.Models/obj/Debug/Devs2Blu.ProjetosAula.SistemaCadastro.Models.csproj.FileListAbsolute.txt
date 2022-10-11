@@ -10,3 +10,6 @@ D:\dev\SistemaCadastroHospital_ProjetoColaborativoDevs2Blu\SlnSistemaCadastro\sr
 D:\dev\SistemaCadastroHospital_ProjetoColaborativoDevs2Blu\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.OOP3.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Models.csproj.CoreCompileInputs.cache
 D:\dev\SistemaCadastroHospital_ProjetoColaborativoDevs2Blu\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.OOP3.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Models.dll
 D:\dev\SistemaCadastroHospital_ProjetoColaborativoDevs2Blu\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.OOP3.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Models.pdb
+D:\dev\SistemaCadastroHospital_ProjetoColaborativoDevs2Blu\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.OOP3.Models\bin\Debug\Correios.dll
+D:\dev\SistemaCadastroHospital_ProjetoColaborativoDevs2Blu\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.OOP3.Models\bin\Debug\Correios.pdb
+D:\dev\SistemaCadastroHospital_ProjetoColaborativoDevs2Blu\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.OOP3.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Models.csproj.CopyComplete

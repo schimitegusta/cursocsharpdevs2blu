@@ -1,4 +1,5 @@
-﻿using Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Data;
+﻿using Correios;
+using Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Data;
 using Devs2Blu.ProjetosAula.SistemaCadastro.Models.Model;
 using MySql.Data.MySqlClient;
 using System;
@@ -33,11 +34,6 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             cboConvenio.DataSource = new BindingSource(listConvenios, null);
             cboConvenio.DisplayMember = "nome";
             cboConvenio.ValueMember = "id";
-        }
-        public void PopulaDataGridPessoa()
-        {
-            var listPacientes = PacienteRepository.GetPessoas();
-            gridPacientes.DataSource = new BindingSource(listPacientes, null);
         }
         private bool ValidaFormCadastro()
         {
@@ -99,6 +95,11 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
 
             return true;
         }
+        public void PopulaDataGridPessoa()
+        {
+            var listPacientes = PacienteRepository.GetPessoas();
+            gridPacientes.DataSource = new BindingSource(listPacientes, null);
+        }
         public void LimpaForms()
         {
             txtNome.Text = "";
@@ -130,10 +131,8 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
         #endregion
 
         #region Events
-
         private void Form1_Load(object sender, EventArgs e)
         {
-            LimpaForms();
             #region TesteConexao
             /*Conn = ConnectionMySQL.GetConnection();
 
@@ -143,8 +142,8 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
                 Conn.Close();
             }*/
             #endregion
+            LimpaForms();
             PopulaComboConveio();
-            PopulaDataGridPessoa();
         }
         private void rdTipoPessoaPF_CheckedChanged(object sender, EventArgs e)
         {
@@ -154,6 +153,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
         }
         private void rdTipoPessoaPJ_CheckedChanged(object sender, EventArgs e)
         {
+
             lblCGCCPF.Text = "CNPJ";
             lblCGCCPF.Visible = true;
             txtCGCCPF.Mask = "00.000.000/000-00";
@@ -165,6 +165,14 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
                 Pessoa pessoa = new Pessoa();
                 pessoa.Nome = txtNome.Text;
                 pessoa.CGCCPF = txtCGCCPF.Text.Replace(',', '.');
+                if (rdTipoPessoaPF.Checked)
+                {
+                    pessoa.TipoPessoa = Models.Enums.TipoPessoa.PF;
+                }
+                else if (rdTipoPessoaPJ.Checked)
+                {
+                    pessoa.TipoPessoa = Models.Enums.TipoPessoa.PJ;
+                }
 
                 Convenio convenio = new Convenio();
                 convenio.Id = (int)cboConvenio.SelectedValue;
@@ -182,10 +190,9 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
                 paciente.PacienteRisco = txtPacienteRisco.Text;
 
                 var pacienteResult = PacienteRepository.Save(pessoa, endereco, paciente, convenio);
-
                 if (pacienteResult.Id > 0)
                 {
-                    MessageBox.Show($"Pessoa {pessoa.Id} - {pessoa.Nome} salvo com sucesso!", "Adicionar paciente", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show($"Paciente {pessoa.Nome} salvo com sucesso!", "Adicionar paciente", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     PopulaDataGridPessoa();
                     LimpaForms();
                 }
@@ -207,6 +214,32 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void mskCEP_TextChanged(object sender, EventArgs e)
+        {
+            if (mskCEP.Text.Length == 10)
+            {
+                try
+                {
+                    CorreiosApi correiosApi = new CorreiosApi();
+                    var retorno = correiosApi.consultaCEP(mskCEP.Text);
+                    txtBairro.Text = retorno.bairro;
+                    txtCidade.Text = retorno.cidade;
+                    txtRua.Text = retorno.end;
+                    cboUF.Text = retorno.uf;
+                }
+                catch (Exception erro)
+                {
+                    MessageBox.Show("CEP não encontrado!", erro.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    mskCEP.Text = "";
+                    mskCEP.Focus();
+                }
+            }
+        }
+        private void Form1_Activated(object sender, EventArgs e)
+        {
+            PopulaDataGridPessoa();
         }
     }
 }
