@@ -1,0 +1,6 @@
+D:\dev\devs2blu\AulaOOP3Revisao\SlnRevisaoOOP\src\Devs2Blu.ProjetosAula.OOP3.Models\bin\Debug\Devs2Blu.ProjetosAula.OOP3.Models.dll
+D:\dev\devs2blu\AulaOOP3Revisao\SlnRevisaoOOP\src\Devs2Blu.ProjetosAula.OOP3.Models\bin\Debug\Devs2Blu.ProjetosAula.OOP3.Models.pdb
+D:\dev\devs2blu\AulaOOP3Revisao\SlnRevisaoOOP\src\Devs2Blu.ProjetosAula.OOP3.Models\obj\Debug\Devs2Blu.ProjetosAula.OOP3.Models.csproj.AssemblyReference.cache
+D:\dev\devs2blu\AulaOOP3Revisao\SlnRevisaoOOP\src\Devs2Blu.ProjetosAula.OOP3.Models\obj\Debug\Devs2Blu.ProjetosAula.OOP3.Models.csproj.CoreCompileInputs.cache
+D:\dev\devs2blu\AulaOOP3Revisao\SlnRevisaoOOP\src\Devs2Blu.ProjetosAula.OOP3.Models\obj\Debug\Devs2Blu.ProjetosAula.OOP3.Models.dll
+D:\dev\devs2blu\AulaOOP3Revisao\SlnRevisaoOOP\src\Devs2Blu.ProjetosAula.OOP3.Models\obj\Debug\Devs2Blu.ProjetosAula.OOP3.Models.pdb
