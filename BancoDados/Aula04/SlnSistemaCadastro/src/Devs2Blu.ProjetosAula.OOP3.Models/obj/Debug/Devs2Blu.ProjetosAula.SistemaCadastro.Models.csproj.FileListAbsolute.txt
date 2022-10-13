@@ -13,3 +13,6 @@ D:\dev\SistemaCadastroHospital_ProjetoColaborativoDevs2Blu\SlnSistemaCadastro\sr
 D:\dev\SistemaCadastroHospital_ProjetoColaborativoDevs2Blu\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.OOP3.Models\bin\Debug\Correios.dll
 D:\dev\SistemaCadastroHospital_ProjetoColaborativoDevs2Blu\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.OOP3.Models\bin\Debug\Correios.pdb
 D:\dev\SistemaCadastroHospital_ProjetoColaborativoDevs2Blu\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.OOP3.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Models.csproj.CopyComplete
+D:\dev\devs2blu\BancoDados\Aula04\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.OOP3.Models\bin\Debug\Correios.dll
+D:\dev\devs2blu\BancoDados\Aula04\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.OOP3.Models\bin\Debug\Correios.pdb
+D:\dev\devs2blu\BancoDados\Aula04\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.OOP3.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Models.csproj.CopyComplete

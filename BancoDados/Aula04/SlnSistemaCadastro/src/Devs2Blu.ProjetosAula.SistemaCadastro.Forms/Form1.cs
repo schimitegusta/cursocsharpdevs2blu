@@ -208,9 +208,6 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             Form2 f2 = new Form2();
             f2.Show();
         }
-
-        #endregion
-
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -241,5 +238,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
         {
             PopulaDataGridPessoa();
         }
+        #endregion
+
     }
 }
