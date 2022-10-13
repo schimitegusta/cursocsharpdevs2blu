@@ -14,25 +14,25 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms.Data
     {
         public ExcluiContato excluir { get; set; }
 
-        public ExcluiContato ExcluirContato(Contatos contatos)
+        public ExcluiContato ExcluirContato(Int32 idContato)
         {
             try
             {
                 MySqlConnection conn = ConnectionMySQL.GetConnection();
 
                 MySqlCommand cmdCompromissos = new MySqlCommand(SQL_DELETE_COMPROMISSOS, conn);
-                cmdCompromissos.Parameters.Add("@id", MySqlDbType.Int32).Value = contatos.Id;
+                cmdCompromissos.Parameters.Add("@id", MySqlDbType.Int32).Value = idContato;
                 cmdCompromissos.ExecuteNonQuery();
 
                 MySqlCommand cmdContatos = new MySqlCommand(SQL_DELETE_CONTATOS, conn);
-                cmdContatos.Parameters.Add("@id", MySqlDbType.Int32).Value = contatos.Id;
+                cmdContatos.Parameters.Add("@id", MySqlDbType.Int32).Value = idContato;
                 cmdContatos.ExecuteNonQuery();
 
                 return excluir;
             }
             catch (MySqlException myExc)
             {
-                MessageBox.Show(myExc.Message, "Erro de MySQL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(myExc.Message, "Erro ao DELETAR MySQL", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 throw;
             }
         }

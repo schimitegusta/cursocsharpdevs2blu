@@ -20,6 +20,7 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms
         public MySqlConnection Conn { get; set; }
         public SalvaContato SalvaContato = new SalvaContato();
         public AlteraContato AlteraContato = new AlteraContato();
+        public ExcluiContato ExcluiContato = new ExcluiContato();
         int idContato;
 
         #region Events
@@ -175,8 +176,15 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms
         }
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            FormExcluir formExcluir = new FormExcluir();
-            formExcluir.Show();
+            if (txtID.Text != "")
+            {
+                idContato = Int32.Parse(txtID.Text);
+
+                var excluirContato = ExcluiContato.ExcluirContato(idContato);
+
+                LimpaForms();
+                MessageBox.Show($"Contato, Compromisso excluidos com sucesso!", "Excluir contato", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
         private void Form1_Activated(object sender, EventArgs e)
         {
