@@ -11,30 +11,13 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms.Data
 {
     public class AlteraContato
     {
-        /*
-        public Contatos Alterar(Contatos contatos, Compromissos compromissos)
+        public bool AlterarContato(Contatos contatos, Int32 idContato)
         {
             try
             {
                 MySqlConnection conn = ConnectionMySQL.GetConnection();
-                contatos.Id = AlterarContato(contatos, conn);
-                compromissos.Id = AlterarCompromissos(contatos, compromissos, conn, contatos.Id);
-
-                return contatos;
-            }
-            catch (MySqlException myExc)
-            {
-                MessageBox.Show(myExc.Message, "Erro de MySQL", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                throw;
-            }
-        }
-
-        private Int32 AlterarContato(Contatos contatos, MySqlConnection conn)
-        {
-            try
-            {
                 MySqlCommand cmd = new MySqlCommand(SQL_UPDATE_CONTATOS, conn);
-                cmd.Parameters.Add("@id", MySqlDbType.Int32).Value = contatos.Id;
+                cmd.Parameters.Add("@id", MySqlDbType.Int32).Value = idContato;
                 cmd.Parameters.Add("@nome", MySqlDbType.VarChar, 45).Value = contatos.Nome;
                 cmd.Parameters.Add("@telefone", MySqlDbType.VarChar, 15).Value = contatos.Telefone;
                 cmd.Parameters.Add("@celular", MySqlDbType.VarChar, 15).Value = contatos.Celular;
@@ -46,7 +29,7 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms.Data
                 cmd.Parameters.Add("@uf", MySqlDbType.VarChar, 2).Value = contatos.UF;
 
                 cmd.ExecuteNonQuery();
-                return (Int32)cmd.LastInsertedId;
+                return true;
             }
             catch (MySqlException myExc)
             {
@@ -54,12 +37,12 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms.Data
                 throw;
             }
         }
-        private Int32 AlterarCompromissos(Contatos contatos, Compromissos compromissos, MySqlConnection conn, Int32 idContato)
+        public bool AlterarCompromissos(Compromissos compromissos, Int32 idContato)
         {
             try
             {
+                MySqlConnection conn = ConnectionMySQL.GetConnection();
                 MySqlCommand cmd = new MySqlCommand(SQL_UPDATE_COMPROMISSOS, conn);
-                cmd.Parameters.Add("@id", MySqlDbType.Int32).Value = contatos.Id;
                 cmd.Parameters.Add("@id_contatos", MySqlDbType.Int32).Value = idContato;
                 cmd.Parameters.Add("@titulo", MySqlDbType.VarChar, 45).Value = compromissos.Titulo;
                 cmd.Parameters.Add("@descricao", MySqlDbType.VarChar, 255).Value = compromissos.Descricao;
@@ -67,7 +50,7 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms.Data
                 cmd.Parameters.Add("@datafim", MySqlDbType.DateTime).Value = compromissos.DataFim;
 
                 cmd.ExecuteNonQuery();
-                return (Int32)cmd.LastInsertedId;
+                return true;
             }
             catch (MySqlException myExc)
             {
@@ -77,42 +60,27 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms.Data
         }
 
         private const string SQL_UPDATE_CONTATOS = @"UPDATE contatos
-id,
-nome,
-telefone,
-celular,
-email,
-rua,
-numero,
-bairro,
-cidade,
-uf,
-status
 SET
-@id,
-@nome,
-@telefone,
-@celular,
-@email,
-@rua,
-@numero,
-@bairro,
-@cidade,
-@uf,
-'A' WHERE id = @id";
+id = @id,
+nome = @nome,
+telefone = @telefone,
+celular = @celular,
+email = @email,
+rua = @rua,
+numero = @numero,
+bairro = @bairro,
+cidade = @cidade,
+uf = @uf,
+status = 'A'
+WHERE id = @id";
         private const string SQL_UPDATE_COMPROMISSOS = @"UPDATE compromissos
-id_contatos,
-titulo,
-descricao,
-dataini,
-datafim,
-status
 SET
-@id_contatos,
-@titulo,
-@descricao,
-@dataini,
-@datafim,
-'A' WHERE id_contatos = @id";*/
+id_contatos = @id_contatos,
+titulo = @titulo,
+descricao = @descricao,
+dataini = @dataini,
+datafim = @datafim,
+status = 'A'
+WHERE id_contatos = @id_contatos";
     }
 }

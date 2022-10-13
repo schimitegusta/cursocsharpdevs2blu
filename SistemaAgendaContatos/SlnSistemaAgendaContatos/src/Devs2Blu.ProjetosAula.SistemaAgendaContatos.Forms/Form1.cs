@@ -17,9 +17,9 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms
     public partial class Form1 : Form
     {
         public MySqlConnection Conn { get; set; }
-
         public SalvaContato SalvaContato = new SalvaContato();
         public AlteraContato AlteraContato = new AlteraContato();
+        int idContato;
 
         #region Events
         public void PopulaGridContatos()
@@ -110,7 +110,6 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms
             return true;
         }
         #endregion
-
         public Form1()
         {
             InitializeComponent();
@@ -158,39 +157,34 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms
                 }
                 else
                 {
-                    //contatos.Id = Int32.Parse(txtID.Text);
-                    //var alterar = AlteraContato.Alterar(contatos, compromissos);
+                    idContato = Int32.Parse(txtID.Text);
+                    var alterarContato = AlteraContato.AlterarContato(contatos, idContato);
+                    var alterarCompromisso = AlteraContato.AlterarCompromissos(compromissos, idContato);
                     LimpaForms();
                 }
             }
             PopulaGridContatos();
         }
-
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             LimpaForms();
             PopulaGridContatos();
         }
-
         private void btnExcluir_Click(object sender, EventArgs e)
         {
             FormExcluir formExcluir = new FormExcluir();
             formExcluir.Show();
         }
-
         private void Form1_Activated(object sender, EventArgs e)
         {
             PopulaGridContatos();
         }
-
-        #endregion
-
         private void gridCompromissos_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             DataGridViewRow linha = gridCompromissos.Rows[e.RowIndex];
 
             txtID.Text = linha.Cells[0].Value.ToString();
-
+            
             txtNome.Text = linha.Cells[1].Value.ToString();
             mskTelefone.Text = linha.Cells[2].Value.ToString();
             mskCelular.Text = linha.Cells[3].Value.ToString();
@@ -204,5 +198,6 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms
             txtTitulo.Text = linha.Cells[10].Value.ToString();
             txtDescricao.Text = linha.Cells[11].Value.ToString();
         }
+        #endregion
     }
 }

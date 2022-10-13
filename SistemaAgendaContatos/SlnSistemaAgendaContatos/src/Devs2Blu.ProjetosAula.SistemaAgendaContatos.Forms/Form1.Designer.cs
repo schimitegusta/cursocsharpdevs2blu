@@ -71,6 +71,8 @@
             // 
             // gpContato
             // 
+            this.gpContato.Controls.Add(this.txtID);
+            this.gpContato.Controls.Add(this.label14);
             this.gpContato.Controls.Add(this.mskCelular);
             this.gpContato.Controls.Add(this.mskTelefone);
             this.gpContato.Controls.Add(this.txtBairro);
@@ -118,14 +120,14 @@
             // 
             this.txtBairro.Location = new System.Drawing.Point(65, 240);
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(120, 20);
+            this.txtBairro.Size = new System.Drawing.Size(127, 20);
             this.txtBairro.TabIndex = 17;
             // 
             // txtCidade
             // 
             this.txtCidade.Location = new System.Drawing.Point(65, 214);
             this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(120, 20);
+            this.txtCidade.Size = new System.Drawing.Size(127, 20);
             this.txtCidade.TabIndex = 16;
             // 
             // cboUF
@@ -189,7 +191,7 @@
             // 
             this.txtNome.Location = new System.Drawing.Point(65, 31);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(203, 20);
+            this.txtNome.Size = new System.Drawing.Size(127, 20);
             this.txtNome.TabIndex = 9;
             // 
             // label9
@@ -275,8 +277,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtID);
-            this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.btnExcluir);
             this.groupBox1.Controls.Add(this.btnLimpar);
             this.groupBox1.Controls.Add(this.btnSalvar);
@@ -397,6 +397,8 @@
             this.gridCompromissos.Location = new System.Drawing.Point(6, 10);
             this.gridCompromissos.MultiSelect = false;
             this.gridCompromissos.Name = "gridCompromissos";
+            this.gridCompromissos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
+            this.gridCompromissos.RowHeadersVisible = false;
             this.gridCompromissos.Size = new System.Drawing.Size(764, 241);
             this.gridCompromissos.TabIndex = 0;
             this.gridCompromissos.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.gridCompromissos_CellMouseDoubleClick);
@@ -414,7 +416,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(167, 214);
+            this.label14.Location = new System.Drawing.Point(198, 34);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(18, 13);
             this.label14.TabIndex = 20;
@@ -423,7 +425,7 @@
             // txtID
             // 
             this.txtID.Enabled = false;
-            this.txtID.Location = new System.Drawing.Point(191, 211);
+            this.txtID.Location = new System.Drawing.Point(222, 31);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(46, 20);
             this.txtID.TabIndex = 21;
