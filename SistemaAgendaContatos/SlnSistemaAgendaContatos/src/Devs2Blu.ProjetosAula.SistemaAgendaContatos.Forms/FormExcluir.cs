@@ -31,6 +31,8 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms
 
             var excluirContato = Excluir.ExcluirContato(contatos);
 
+            MessageBox.Show($"Contato, Compromisso excluidos com sucesso!", "Excluir contato", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
             this.Close();
         }
         private void btnCancelar_Click(object sender, EventArgs e)

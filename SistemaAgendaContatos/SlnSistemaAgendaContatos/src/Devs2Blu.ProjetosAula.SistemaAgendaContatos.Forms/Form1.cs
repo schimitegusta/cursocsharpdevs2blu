@@ -1,4 +1,5 @@
-﻿using Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms.Data;
+﻿using Correios.CorreiosServiceReference;
+using Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms.Data;
 using Devs2Blu.ProjetosAula.SistemaAgendaContatos.Models.Model;
 using MySql.Data.MySqlClient;
 using System;
@@ -153,6 +154,7 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms
                 if (txtID.Text == "")
                 {
                     var salvando = SalvaContato.Save(contatos, compromissos);
+                    MessageBox.Show($"Contato, Compromisso salvos com sucesso!", "Adicionar contato", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     LimpaForms();
                 }
                 else
@@ -160,6 +162,7 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms
                     idContato = Int32.Parse(txtID.Text);
                     var alterarContato = AlteraContato.AlterarContato(contatos, idContato);
                     var alterarCompromisso = AlteraContato.AlterarCompromissos(compromissos, idContato);
+                    MessageBox.Show($"Contato, Compromisso alterados com sucesso!", "Alterar contato", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     LimpaForms();
                 }
             }

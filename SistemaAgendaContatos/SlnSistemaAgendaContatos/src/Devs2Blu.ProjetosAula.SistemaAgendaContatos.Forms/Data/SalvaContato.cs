@@ -23,7 +23,7 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms.Data
             }
             catch (MySqlException myExc)
             {
-                MessageBox.Show(myExc.Message, "Erro de MySQL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(myExc.Message, "Erro ao SALVAR MySQL", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 throw;
             }
         }
