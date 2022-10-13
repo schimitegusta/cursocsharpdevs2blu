@@ -11,6 +11,7 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms.Data
 {
     public class AlteraContato
     {
+        /*
         public Contatos Alterar(Contatos contatos, Compromissos compromissos)
         {
             try
@@ -112,6 +113,6 @@ SET
 @descricao,
 @dataini,
 @datafim,
-'A' WHERE id_contatos = @id";
+'A' WHERE id_contatos = @id";*/
     }
 }
