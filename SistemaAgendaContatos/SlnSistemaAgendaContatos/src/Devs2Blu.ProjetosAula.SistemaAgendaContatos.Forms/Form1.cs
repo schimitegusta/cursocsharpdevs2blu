@@ -18,11 +18,10 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms
     public partial class Form1 : Form
     {
         public MySqlConnection Conn { get; set; }
+
         public SalvaContato SalvaContato = new SalvaContato();
-        public Form1()
-        {
-            InitializeComponent();
-        }
+
+        #region Events
         public void PopulaGridContatos()
         {
             var listContatos = SalvaContato.GetGridContatos();
@@ -52,6 +51,13 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms
             txtTitulo.Text = "";
             txtDescricao.Text = "";
         }
+
+        #endregion
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             #region TesteConexao
@@ -66,7 +72,7 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms
             LimpaForms();
             PopulaGridContatos();
         }
-
+        #region Methods
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             Contatos contatos = new Contatos();
@@ -135,5 +141,7 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms
             Contatos contatos = new Contatos();
             contatos.Id = Int32.Parse(txtIdBuscar.Text);
         }
+
+        #endregion
     }
 }
