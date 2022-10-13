@@ -1,5 +1,4 @@
-﻿using Correios;
-using Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms.Data;
+﻿using Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms.Data;
 using Devs2Blu.ProjetosAula.SistemaAgendaContatos.Models.Model;
 using MySql.Data.MySqlClient;
 using System;
@@ -20,6 +19,7 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms
         public MySqlConnection Conn { get; set; }
 
         public SalvaContato SalvaContato = new SalvaContato();
+        public AlteraContato AlteraContato = new AlteraContato();
 
         #region Events
         public void PopulaGridContatos()
@@ -29,6 +29,7 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms
         }
         public void LimpaForms()
         {
+            txtID.Text = "";
             txtNome.Text = "";
 
             mskTelefone.Text = "";
@@ -38,9 +39,6 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms
             mskCelular.Mask = "00 00000-0000";
 
             txtEmail.Text = "";
-
-            mskCEP.Text = "";
-            mskCEP.Mask = "00.000-000";
 
             txtRua.Text = "";
             txtNumero.Text = "";
@@ -92,7 +90,15 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms
             compromissos.DataInicio = dtpInicio.Value;
             compromissos.DataFim = dtpFim.Value;
 
-            var salvando = SalvaContato.Save(contatos, compromissos);
+            if (txtID.Text == "")
+            {
+                var salvando = SalvaContato.Save(contatos, compromissos);
+            } else
+            {
+                contatos.Id = Int32.Parse(txtID.Text);
+                var alterar = AlteraContato.Alterar(contatos, compromissos);
+            }
+
             PopulaGridContatos();
             LimpaForms();
         }
@@ -101,28 +107,6 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms
         {
             LimpaForms();
             PopulaGridContatos();
-        }
-
-        private void mskCEP_TextChanged(object sender, EventArgs e)
-        {
-            if (mskCEP.Text.Length == 10)
-            {
-                try
-                {
-                    CorreiosApi correiosApi = new CorreiosApi();
-                    var retorno = correiosApi.consultaCEP(mskCEP.Text);
-                    txtBairro.Text = retorno.bairro;
-                    txtCidade.Text = retorno.cidade;
-                    txtRua.Text = retorno.end;
-                    cboUF.Text = retorno.uf;
-                }
-                catch (Exception erro)
-                {
-                    MessageBox.Show("CEP não encontrado!", erro.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    mskCEP.Text = "";
-                    mskCEP.Focus();
-                }
-            }
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -136,12 +120,26 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms
             PopulaGridContatos();
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-            Contatos contatos = new Contatos();
-            contatos.Id = Int32.Parse(txtIdBuscar.Text);
-        }
-
         #endregion
+
+        private void gridCompromissos_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            DataGridViewRow linha = gridCompromissos.Rows[e.RowIndex];
+            
+            txtID.Text = linha.Cells[0].Value.ToString();
+            
+            txtNome.Text = linha.Cells[1].Value.ToString();
+            mskTelefone.Text = linha.Cells[2].Value.ToString();
+            mskCelular.Text = linha.Cells[3].Value.ToString();
+            txtEmail.Text = linha.Cells[4].Value.ToString();
+            txtRua.Text = linha.Cells[5].Value.ToString();
+            txtNumero.Text = linha.Cells[6].Value.ToString();
+            txtBairro.Text = linha.Cells[7].Value.ToString();
+            txtCidade.Text = linha.Cells[8].Value.ToString();
+            cboUF.Text = linha.Cells[9].Value.ToString();
+
+            txtTitulo.Text = linha.Cells[10].Value.ToString();
+            txtDescricao.Text = linha.Cells[11].Value.ToString();
+        }
     }
 }

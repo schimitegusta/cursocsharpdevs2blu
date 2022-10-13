@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.gpContato = new System.Windows.Forms.GroupBox();
-            this.mskCEP = new System.Windows.Forms.MaskedTextBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.mskCelular = new System.Windows.Forms.MaskedTextBox();
             this.mskTelefone = new System.Windows.Forms.MaskedTextBox();
             this.txtBairro = new System.Windows.Forms.TextBox();
@@ -63,9 +61,8 @@
             this.gpGrid = new System.Windows.Forms.GroupBox();
             this.gridCompromissos = new System.Windows.Forms.DataGridView();
             this.btnExcluir = new System.Windows.Forms.Button();
-            this.txtIdBuscar = new System.Windows.Forms.TextBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.gpContato.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.gpGrid.SuspendLayout();
@@ -74,8 +71,6 @@
             // 
             // gpContato
             // 
-            this.gpContato.Controls.Add(this.mskCEP);
-            this.gpContato.Controls.Add(this.label14);
             this.gpContato.Controls.Add(this.mskCelular);
             this.gpContato.Controls.Add(this.mskTelefone);
             this.gpContato.Controls.Add(this.txtBairro);
@@ -100,25 +95,6 @@
             this.gpContato.TabIndex = 0;
             this.gpContato.TabStop = false;
             this.gpContato.Text = "Contato";
-            // 
-            // mskCEP
-            // 
-            this.mskCEP.Location = new System.Drawing.Point(65, 135);
-            this.mskCEP.Mask = "00.000-000";
-            this.mskCEP.Name = "mskCEP";
-            this.mskCEP.Size = new System.Drawing.Size(89, 20);
-            this.mskCEP.TabIndex = 21;
-            this.mskCEP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.mskCEP.TextChanged += new System.EventHandler(this.mskCEP_TextChanged);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(31, 138);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(28, 13);
-            this.label14.TabIndex = 20;
-            this.label14.Text = "CEP";
             // 
             // mskCelular
             // 
@@ -197,9 +173,9 @@
             // 
             // txtRua
             // 
-            this.txtRua.Location = new System.Drawing.Point(160, 161);
+            this.txtRua.Location = new System.Drawing.Point(65, 135);
             this.txtRua.Name = "txtRua";
-            this.txtRua.Size = new System.Drawing.Size(108, 20);
+            this.txtRua.Size = new System.Drawing.Size(203, 20);
             this.txtRua.TabIndex = 13;
             // 
             // txtEmail
@@ -255,7 +231,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(127, 164);
+            this.label5.Location = new System.Drawing.Point(32, 138);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(27, 13);
             this.label5.TabIndex = 4;
@@ -299,9 +275,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.btnBuscar);
-            this.groupBox1.Controls.Add(this.txtIdBuscar);
+            this.groupBox1.Controls.Add(this.txtID);
+            this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.btnExcluir);
             this.groupBox1.Controls.Add(this.btnLimpar);
             this.groupBox1.Controls.Add(this.btnSalvar);
@@ -420,9 +395,11 @@
             // 
             this.gridCompromissos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridCompromissos.Location = new System.Drawing.Point(6, 10);
+            this.gridCompromissos.MultiSelect = false;
             this.gridCompromissos.Name = "gridCompromissos";
             this.gridCompromissos.Size = new System.Drawing.Size(764, 241);
             this.gridCompromissos.TabIndex = 0;
+            this.gridCompromissos.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.gridCompromissos_CellMouseDoubleClick);
             // 
             // btnExcluir
             // 
@@ -434,31 +411,22 @@
             this.btnExcluir.UseVisualStyleBackColor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
-            // txtIdBuscar
+            // label14
             // 
-            this.txtIdBuscar.Location = new System.Drawing.Point(275, 211);
-            this.txtIdBuscar.Name = "txtIdBuscar";
-            this.txtIdBuscar.Size = new System.Drawing.Size(44, 20);
-            this.txtIdBuscar.TabIndex = 20;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(167, 214);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(18, 13);
+            this.label14.TabIndex = 20;
+            this.label14.Text = "ID";
             // 
-            // btnBuscar
+            // txtID
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(325, 209);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscar.TabIndex = 21;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(251, 214);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(18, 13);
-            this.label15.TabIndex = 22;
-            this.label15.Text = "ID";
+            this.txtID.Enabled = false;
+            this.txtID.Location = new System.Drawing.Point(191, 211);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(46, 20);
+            this.txtID.TabIndex = 21;
             // 
             // Form1
             // 
@@ -516,12 +484,9 @@
         private System.Windows.Forms.DataGridView gridCompromissos;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnLimpar;
-        private System.Windows.Forms.MaskedTextBox mskCEP;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button btnExcluir;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.TextBox txtIdBuscar;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.Label label14;
     }
 }
 

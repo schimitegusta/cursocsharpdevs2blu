@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\AlteraContato.cs" />
     <Compile Include="Data\ConnectionMySQL.cs" />
     <Compile Include="Data\ExcluiContato.cs" />
     <Compile Include="Data\SalvaContato.cs" />
