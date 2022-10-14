@@ -176,14 +176,17 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms
         }
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            if (txtID.Text != "")
+            if (DialogResult.Yes == MessageBox.Show($"Realmente deseja excluir esse contato?", "Excluir contato", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
-                idContato = Int32.Parse(txtID.Text);
+                if (txtID.Text != "")
+                {
+                    idContato = Int32.Parse(txtID.Text);
 
-                var excluirContato = ExcluiContato.ExcluirContato(idContato);
+                    var excluirContato = ExcluiContato.ExcluirContato(idContato);
 
-                LimpaForms();
-                MessageBox.Show($"Contato, Compromisso excluidos com sucesso!", "Excluir contato", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    LimpaForms();
+                    MessageBox.Show($"Contato, Compromisso excluidos com sucesso!", "Excluir contato", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
             }
         }
         private void Form1_Activated(object sender, EventArgs e)
@@ -195,7 +198,7 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms
             DataGridViewRow linha = gridCompromissos.Rows[e.RowIndex];
 
             txtID.Text = linha.Cells[0].Value.ToString();
-            
+
             txtNome.Text = linha.Cells[1].Value.ToString();
             mskTelefone.Text = linha.Cells[2].Value.ToString();
             mskCelular.Text = linha.Cells[3].Value.ToString();

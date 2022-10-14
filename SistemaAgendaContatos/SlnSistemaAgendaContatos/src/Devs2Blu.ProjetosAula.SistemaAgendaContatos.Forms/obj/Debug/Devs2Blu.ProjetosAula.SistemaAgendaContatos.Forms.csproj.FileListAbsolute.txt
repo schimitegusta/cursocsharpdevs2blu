@@ -25,4 +25,3 @@ D:\dev\devs2blu\SistemaAgendaContatos\SlnSistemaAgendaContatos\src\Devs2Blu.Proj
 D:\dev\devs2blu\SistemaAgendaContatos\SlnSistemaAgendaContatos\src\Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms.csproj.CopyComplete
 D:\dev\devs2blu\SistemaAgendaContatos\SlnSistemaAgendaContatos\src\Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms\bin\Debug\Correios.dll
 D:\dev\devs2blu\SistemaAgendaContatos\SlnSistemaAgendaContatos\src\Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms\bin\Debug\Correios.pdb
-D:\dev\devs2blu\SistemaAgendaContatos\SlnSistemaAgendaContatos\src\Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms.FormExcluir.resources

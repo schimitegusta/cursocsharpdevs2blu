@@ -79,7 +79,6 @@ namespace Devs2Blu.ProjetosAula.SistemaAgendaContatos.Forms.Data
                 MySqlConnection conn = ConnectionMySQL.GetConnection();
                 MySqlCommand cmd = new MySqlCommand(SQL_SELECT_ALL, conn);
                 MySqlDataReader dataReader = cmd.ExecuteReader();
-                
 
                 return dataReader;
             }
