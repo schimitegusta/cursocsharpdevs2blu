@@ -51,3 +51,6 @@ D:\dev\SistemaCadastroHospital_ProjetoColaborativoDevs2Blu\SlnSistemaCadastro\sr
 D:\dev\SistemaCadastroHospital_ProjetoColaborativoDevs2Blu\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Forms.pdb
 D:\dev\SistemaCadastroHospital_ProjetoColaborativoDevs2Blu\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\bin\Debug\Correios.dll
 D:\dev\SistemaCadastroHospital_ProjetoColaborativoDevs2Blu\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\bin\Debug\Correios.pdb
+D:\dev\devs2blu\BancoDados\Aula04\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\bin\Debug\Correios.dll
+D:\dev\devs2blu\BancoDados\Aula04\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\bin\Debug\Correios.pdb
+D:\dev\devs2blu\BancoDados\Aula04\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Form2.resources

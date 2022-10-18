@@ -1,0 +1,6 @@
+D:\dev\devs2blu\SistemaAgendaContatos\SlnSistemaAgendaContatos\src\Devs2Blu.ProjetosAula.SistemaAgendaContatos.Models\bin\Debug\Devs2Blu.ProjetosAula.SistemaAgendaContatos.Models.dll
+D:\dev\devs2blu\SistemaAgendaContatos\SlnSistemaAgendaContatos\src\Devs2Blu.ProjetosAula.SistemaAgendaContatos.Models\bin\Debug\Devs2Blu.ProjetosAula.SistemaAgendaContatos.Models.pdb
+D:\dev\devs2blu\SistemaAgendaContatos\SlnSistemaAgendaContatos\src\Devs2Blu.ProjetosAula.SistemaAgendaContatos.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgendaContatos.Models.csproj.AssemblyReference.cache
+D:\dev\devs2blu\SistemaAgendaContatos\SlnSistemaAgendaContatos\src\Devs2Blu.ProjetosAula.SistemaAgendaContatos.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgendaContatos.Models.csproj.CoreCompileInputs.cache
+D:\dev\devs2blu\SistemaAgendaContatos\SlnSistemaAgendaContatos\src\Devs2Blu.ProjetosAula.SistemaAgendaContatos.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgendaContatos.Models.dll
+D:\dev\devs2blu\SistemaAgendaContatos\SlnSistemaAgendaContatos\src\Devs2Blu.ProjetosAula.SistemaAgendaContatos.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgendaContatos.Models.pdb
