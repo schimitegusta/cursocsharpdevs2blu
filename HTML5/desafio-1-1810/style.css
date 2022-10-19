@@ -23,6 +23,11 @@ header {
 }
 
 figure {
+    display: inline-flex;
+    line-height: 100px;
+}
+
+figure a {
     height: 100px;
     display: inline-flex;
     line-height: 100px;
@@ -32,7 +37,7 @@ header figure {
     color: #000;
 }
 
-header figure img {
+header figure a img {
     border-radius: 50px;
 }
 
@@ -67,11 +72,11 @@ main figure img {
 }
 
 h3.titulo-texto {
-    border-bottom: 1px solid black;
     padding: .3em;
 }
 
 div.conteudo {
+    border-top: 2px solid black;
     padding: .5em;
     text-align: justify;
 }
@@ -79,4 +84,10 @@ div.conteudo {
 div.conteudo p {
     margin-top: 0.2em;
     text-indent: 1.5em;
+}
+
+h3.conteudo {
+    margin-top: .3em;
+    margin-bottom: .3em;
+    margin-left: 0.5em;
 }
