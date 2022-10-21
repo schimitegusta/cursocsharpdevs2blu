@@ -27,15 +27,16 @@ header figure img {
   border-radius: 30px;
 }
 
-figure {
+header figure {
     display: flex;
 }
 
-figure figcaption {
+header figure figcaption {
     line-height: 80px;
     margin-left: .5em;
 }
 
+/* Destaque */
 .conteudo-destaque  img {
     display: block;
     width: 80vw;
@@ -47,6 +48,7 @@ figure figcaption {
     margin-bottom: 3em;
 }
 
+/* Main */
 .wrapper {
   display: block;
   width: 90vw;
@@ -54,4 +56,39 @@ figure figcaption {
   margin-right: auto;
   margin-top: 3em;
   margin-bottom: 3em;
+}
+
+main {
+  position: absolute;
+  display: block;
+  width: 90vw;
+  border: 2px solid #000;
+  border-radius: 2px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.titulo-produtos {
+  font-size: 30px;
+  border-bottom: 2px solid black;
+  padding-left: .5em;
+  padding-top: .2em;
+}
+
+.style-produtos {
+  width: 180px;
+  height: 300px;
+  margin: 1.5em 0.5em;
+  font-size: 16px;
+  text-align: center;
+  float: left;
+}
+
+.style-produtos figure img {
+  width: 128px;
+  height: 128px;
+}
+
+ul {
+  list-style-type: none;
 }
