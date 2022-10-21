@@ -23,13 +23,13 @@ header {
 }
 
 figure {
-    display: inline-flex;
+    display: flex;
     line-height: 100px;
 }
 
 figure a {
     height: 100px;
-    display: inline-flex;
+    display: flex;
     line-height: 100px;
 }
 
@@ -64,7 +64,7 @@ main {
     background-color: white;
 }
 
-main figure img {
+main figure a img {
     margin-left: 5px;
     margin-top: 5px;
     padding: 5px;
