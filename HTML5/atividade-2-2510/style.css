@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(212, 246, 250);
+    width: 100vw;
+}
+/* Header */
+header {
+    width: 100vw;
+    padding: .5em;
+    background-color: rgb(13, 150, 165);
+    border-bottom: 2px solid black;
+}
+
+header figure {
+    display: flex;
+}
+
+header figure figcaption {
+    line-height: 80px;
+    margin-left: .5em;
+}
+
+header figure img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Main/Wrapper*/
+#wrapper {
+    display: block;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-container {
+    margin-top: 2em;
+    display: block;
+    border: 2px solid rgb(0, 0, 0);
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.banner-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-container figcaption {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: .5em;
+    display: none;
+}
+
+.banner-container:hover figcaption {
+    display: block;
+}
+
+.lista-cursos {
+    list-style: none;
+}
+
+.lista-cursos h1 {
+    margin-bottom: .5em;
+}
+
+.lista-cursos li {
+    margin: .2em;
+    background-color: rgba(171, 207, 211, 0.822);
+    text-align: center;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lista-cursos li a {
+    text-decoration: none;
+}
+
+.lista-cursos li:hover {
+    color: blue;
+    text-shadow: 1px 2px 2px rgb(47, 0, 255);
+    font-weight: 500;
+    background-color: rgb(171, 207, 211);
+}

@@ -1,0 +1,104 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+#bloco {
+  display: block;
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  line-height: 100px;
+  text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#formulario {
+    width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#formulario header {
+    background-color: aquamarine;
+    text-align: center;
+    border-bottom: 3px solid black;
+    margin-bottom: .5em;
+}
+
+#formulario .container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-contato {
+    padding: .5em;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.form-contato legend {
+    display: block;
+    padding: .3em;
+    background-color: rgba(128, 128, 128, 0.356);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.control-group {
+    display: flex;
+    height: 1.5em;
+    margin: .3em;
+}
+
+.control-group label {
+    width: 5em;
+    margin-right: .5em;
+    text-align: right;
+}
+
+.control {
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.control:focus {
+    border: 2px solid rgba(0, 0, 0, 0.041);
+}
+
+#endereco {
+    display: none;
+}
+
+.controles-form {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(128, 128, 128, 0.356);
+    border-radius: 3px;
+    padding: 1em;
+}
+
+.btn {
+    height: 2em;
+    padding: .2em;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.btn-sucess {
+    background-color: rgb(226, 255, 245);
+}
+
+.btn-sucess:hover {
+    background-color: rgb(53, 255, 188);
+}
