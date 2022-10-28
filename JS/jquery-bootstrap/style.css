@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* Introducao - JQUery */
+#form {
+    border: 3px solid #333;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.form-group {
+    display: block;
+    width: 40%;
+}
+
+#quadro {
+    width: 40%;
+    margin: 1em auto;
+    box-shadow: 2px 3px 2px #333;
+    border-radius: 6px;
+    padding: 1em;
+    background: linear-gradient(rgb(183, 249, 239),rgb(219, 246, 242),rgb(225, 183, 249));
+    background-size: 300% 300%;
+    display: none;
+
+}
+
+.animacao-quadro {
+    animation: fundo 6s ease infinite;
+
+}
+
+@keyframes fundo {
+    0% {
+        background-size: 0% 200%;
+    }
+    25% {
+        background-size: 100% 0%;
+    }
+    60% {
+        background-size: 50% 100%;
+    }
+    100% {
+        background-size: 0% 300%;
+    }
+}
+
+/* Introducao Bootstrap */
+/*bg-dark*/
+.bg-customized {
+    background-color: rgb(240, 197, 59);
+}
+
+/*navbar-brand-customized*/
+.navbar-brand-customized {
+    color: black;
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+a:hover {
+    color: rgba(0, 0, 0, 0.651);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.nav-link-customized {
+    color: black;
+    display: block;
+    padding: 0.5rem 1rem;
+    font-weight: 400;
+}
+
+#conteudo {
+    width: 95vw;
+    margin: 1em auto;
+}
+
+#conteudo ul li label {
+    margin-left: 2.5em;
+}
+
+#conteudo ul li input {
+    margin-left: .5em;
+}
+
+#destaque img {
+    height: 20vw;
+}
