@@ -9,7 +9,6 @@ const getPokemonList = (offset=null,limit=null) => {
 
 }
 
-
 // URL: https://pokeapi.co/api/v2/pokemon/
 const getPokemon = () => {
     getPagina('getPokemon.html','main');
