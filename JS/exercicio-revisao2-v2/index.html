@@ -18,8 +18,12 @@
     <header>
       <nav class="navbar navbar-dark navbar-expand-lg nav-color">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img class="img-logo" src="_img/Breaking_Bad_logo.png" alt="logo breaking bead">
+          <a id="btn-index" class="navbar-brand" href="#">
+            <img
+              class="img-logo"
+              src="_img/Breaking_Bad_logo.png"
+              alt="logo breaking bead"
+            />
           </a>
           <button
             class="navbar-toggler"
@@ -34,9 +38,15 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <!-- <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li> -->
+              <li class="nav-item">
+                <a
+                  id="btn-galeria"
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  >Galeria</a
+                >
+              </li>
             </ul>
             <form class="d-flex" role="search">
               <input
@@ -47,7 +57,7 @@
                 placeholder="Pesquisar"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-success" type="submit">
+              <button id="btn-Search" onclick="Search()" class="btn btn-outline-dark">
                 Pesquisar
               </button>
             </form>
@@ -56,10 +66,10 @@
       </nav>
     </header>
 
-    <main class="row justify-content-center">
+    <main>
       
     </main>
-
+    
     <!-- Modal -->
     <div
       class="modal fade"
@@ -95,6 +105,10 @@
       </div>
     </div>
 
+    <footer class="nav-color footer-display w-100">
+      <p class="texto-footer">Copyright &copy; 2022 Gustavo Schimite Soares</p>
+    </footer>
+
     <!-- JQuery -->
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -109,6 +123,7 @@
     ></script>
     <!-- Scripts -->
     <script src="_js/library.js"></script>
+    <script src="_js/storage.js"></script>
     <script src="_js/main.js"></script>
     <!-- Link style -->
     <link rel="stylesheet" href="style.css" />
