@@ -75,6 +75,7 @@ li {
 .card-img {
   /* width: 180px;
     height: 240px; */
+  width: 80%;
   height: 16vw;
   margin: auto;
   border-radius: 5px;
@@ -117,4 +118,23 @@ li {
 .texto-footer {
   margin: 0;
   color: rgba(255, 255, 255, 0.356);
+}
+
+/* CONTATO */
+
+#contato {
+  width: 60vw;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.itens-contato {
+  margin-top: 1em
+}
+
+.google-maps {
+  width: 60vw;
+  margin-right: auto;
+  margin-left: auto;
 }

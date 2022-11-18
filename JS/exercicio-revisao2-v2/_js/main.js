@@ -7,14 +7,19 @@ $(document).ready(() => {
   getPagina("_views/home.html", "main");
   getAPI(URL_API_CHARACTER, criaListaCharacterHome);
 
+
+  $("#btn-index").click((e) => {
+    getPagina("_views/home.html", "main");
+    getAPI(URL_API_CHARACTER, criaListaCharacterHome);
+  });
+
   $("#btn-galeria").click((e) => {
     getPagina("_views/galeria.html", "main");
     getAPI(URL_API_CHARACTER, criaListaCharacter);
   });
 
-  $("#btn-index").click((e) => {
-    getPagina("_views/home.html", "main");
-    getAPI(URL_API_CHARACTER, criaListaCharacterHome);
+  $("#btn-contato").click((e) => {
+    getPagina("_views/contato.html", "main");
   });
 });
 
