@@ -1,0 +1,19 @@
+﻿@model Pokemons
+@{
+    ViewData["Title"] = "API Pokemons";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+</div>
+
+<div class="row">
+    @foreach (var item in Model.results)
+    {
+        <div class="card" style="width: 18rem; padding: 0;">
+            <div class="card-header bg-dark" style="width: 100%;">
+                <h2 class="text-white">@item.name</h2>
+            </div>
+        </div>
+    }
+</div>

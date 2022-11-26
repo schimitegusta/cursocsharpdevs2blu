@@ -33,7 +33,7 @@ function Search() {
       return;
     }
   }
-}
+};
 
 const criaListaCharacter = (data) => {
   let main = getElement("#main-galeria");

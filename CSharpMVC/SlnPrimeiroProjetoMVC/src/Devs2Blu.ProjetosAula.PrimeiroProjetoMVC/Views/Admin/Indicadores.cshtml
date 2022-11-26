@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Indicadores";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div id="conteudo-cards" class="container my-4 mb-2">
+</div>
+
+@section scripts {
+    <script type="text/javascript">
+        $("document").ready(() => {
+            $.ajax({
+                url: '@Url.Action("CardsResultados","Admin")',
+                dataType: 'html',
+                success: (response) => {
+                    $('#conteudo-cards').html(response);
+                }
+            })
+        })
+    </script>
+}
