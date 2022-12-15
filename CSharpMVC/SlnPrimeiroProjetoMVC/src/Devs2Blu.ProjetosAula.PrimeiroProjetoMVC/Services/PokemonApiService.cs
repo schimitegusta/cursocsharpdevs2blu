@@ -9,7 +9,7 @@ namespace Devs2Blu.ProjetosAula.PrimeiroProjetoMVC.Services
 
         public PokemonApiService()
         {
-            _httpClient= new HttpClient();
+            _httpClient = new HttpClient();
         }
 
         public async Task<Pokemons> GetPokemons()

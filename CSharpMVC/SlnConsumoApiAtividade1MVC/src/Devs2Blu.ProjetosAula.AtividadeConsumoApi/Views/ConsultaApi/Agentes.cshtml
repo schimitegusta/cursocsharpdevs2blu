@@ -1,0 +1,25 @@
+﻿@model Agents
+@{
+    ViewData["Title"] = "API Valorant AGENTES";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+</div>
+
+<div class="row">
+    @foreach (var item in Model.data)
+    {
+        <div class="card" style="width: 18rem; text-align: center; margin:.5em;">
+            <img src="@item.displayIcon" class="card-img-top" alt="@item.displayName">
+            <div class="card-body">
+                <h5 class="card-title">@item.displayName</h5>
+                <a href="@item.fullPortrait" target="_blank" class="btn btn-primary">Retrato PNG</a>
+            </div>
+        </div>
+    }
+</div>
+
+<script>
+
+</script>

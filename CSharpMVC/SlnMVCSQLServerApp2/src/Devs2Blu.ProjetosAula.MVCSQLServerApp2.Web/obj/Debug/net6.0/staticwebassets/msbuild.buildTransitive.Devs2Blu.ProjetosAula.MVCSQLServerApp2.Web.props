@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.props" />
+</Project>

@@ -1,0 +1,22 @@
+﻿@model Weapons
+@{
+    ViewData["Title"] = "API Valorant ARMAS";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+</div>
+
+<div class="row">
+    @foreach (var item in Model.data)
+    {
+        <div class="card" style="width: 18rem; height:18em; text-align: center; margin:.5em;">
+            <a href="@item.displayIcon" target="_blank" style="text-decoration: none; margin-top:auto; margin-bottom:auto;">
+                <img src="@item.displayIcon" class="card-img-top" alt="@item.displayName">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: black;">@item.displayName</h5>
+                </div>
+            </a>
+        </div>
+    }
+</div>
