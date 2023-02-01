@@ -1,0 +1,34 @@
+﻿@model RevisaoProjetoNoticias.Domain.DTO.CategoryDTO
+<h1>Delete</h1>
+
+<h4>Category</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Delete">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="id" />
+            <input type="hidden" asp-for="name" />
+
+            <div class="form-group">
+                <label asp-for="name" class="control-label"></label>
+                <br/>
+                <label asp-for="name" class="form-control">@Model.name</label>
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+            <div class="form-group my-4">
+                <input type="submit" value="Delete" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

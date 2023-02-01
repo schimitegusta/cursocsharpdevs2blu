@@ -1,0 +1,305 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Web\\RevisaoProjetoNoticias.Web.csproj": {}
+  },
+  "projects": {
+    "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\RevisaoProjetoNoticias.Application.Service\\RevisaoProjetoNoticias.Application.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\RevisaoProjetoNoticias.Application.Service\\RevisaoProjetoNoticias.Application.Service.csproj",
+        "projectName": "RevisaoProjetoNoticias.Application.Service",
+        "projectPath": "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\RevisaoProjetoNoticias.Application.Service\\RevisaoProjetoNoticias.Application.Service.csproj",
+        "packagesPath": "C:\\Users\\heart\\.nuget\\packages\\",
+        "outputPath": "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\RevisaoProjetoNoticias.Application.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\heart\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Domain\\RevisaoProjetoNoticias.Domain.csproj": {
+                "projectPath": "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Domain\\RevisaoProjetoNoticias.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Domain\\RevisaoProjetoNoticias.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Domain\\RevisaoProjetoNoticias.Domain.csproj",
+        "projectName": "RevisaoProjetoNoticias.Domain",
+        "projectPath": "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Domain\\RevisaoProjetoNoticias.Domain.csproj",
+        "packagesPath": "C:\\Users\\heart\\.nuget\\packages\\",
+        "outputPath": "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\heart\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Infra.Data\\RevisaoProjetoNoticias.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Infra.Data\\RevisaoProjetoNoticias.Infra.Data.csproj",
+        "projectName": "RevisaoProjetoNoticias.Infra.Data",
+        "projectPath": "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Infra.Data\\RevisaoProjetoNoticias.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\heart\\.nuget\\packages\\",
+        "outputPath": "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Infra.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\heart\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Domain\\RevisaoProjetoNoticias.Domain.csproj": {
+                "projectPath": "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Domain\\RevisaoProjetoNoticias.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer.Design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Web\\RevisaoProjetoNoticias.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Web\\RevisaoProjetoNoticias.Web.csproj",
+        "projectName": "RevisaoProjetoNoticias.Web",
+        "projectPath": "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Web\\RevisaoProjetoNoticias.Web.csproj",
+        "packagesPath": "C:\\Users\\heart\\.nuget\\packages\\",
+        "outputPath": "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\heart\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\RevisaoProjetoNoticias.Application.Service\\RevisaoProjetoNoticias.Application.Service.csproj": {
+                "projectPath": "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\RevisaoProjetoNoticias.Application.Service\\RevisaoProjetoNoticias.Application.Service.csproj"
+              },
+              "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Domain\\RevisaoProjetoNoticias.Domain.csproj": {
+                "projectPath": "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Domain\\RevisaoProjetoNoticias.Domain.csproj"
+              },
+              "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Infra.Data\\RevisaoProjetoNoticias.Infra.Data.csproj": {
+                "projectPath": "D:\\dev\\devs2blu\\CSharpMVC\\RevisaoProjetoNoticias\\src\\RevisaoProjetoNoticias.Infra.Data\\RevisaoProjetoNoticias.Infra.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer.Design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
