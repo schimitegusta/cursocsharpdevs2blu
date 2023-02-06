@@ -13,8 +13,8 @@ namespace ProjetoSaude.Domain.DTO
         public string? tipoSanguineo { get; set; }
         public string limitacao { get; set; }
         public string alergia { get; set; }
-
         public int pessoaId { get; set; }
+
         public virtual Pessoa? pessoa { get; set; }
         public ICollection<Agenda>? agenda { get; set; }
         public ICollection<Prontuario>? prontuario { get; set; }

@@ -1,0 +1,45 @@
+﻿@model ProjetoSaude.Domain.DTO.PacienteDTO
+<h1>Create</h1>
+
+<h4>Paciente</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="tipoSanguineo" class="control-label"></label>
+                <input asp-for="tipoSanguineo" class="form-control" />
+                <span asp-validation-for="tipoSanguineo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="limitacao" class="control-label"></label>
+                <input asp-for="limitacao" class="form-control" />
+                <span asp-validation-for="limitacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="alergia" class="control-label"></label>
+                <input asp-for="alergia" class="form-control" />
+                <span asp-validation-for="alergia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="pessoaId" class="control-label"></label>
+                <input asp-for="pessoaId" class="form-control" />
+                <span asp-validation-for="pessoaId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }
