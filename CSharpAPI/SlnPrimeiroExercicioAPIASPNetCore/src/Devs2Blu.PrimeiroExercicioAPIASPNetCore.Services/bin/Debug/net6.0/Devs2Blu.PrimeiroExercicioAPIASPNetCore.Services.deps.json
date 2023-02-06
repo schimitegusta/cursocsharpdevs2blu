@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Devs2Blu.PrimeiroExercicioAPIASPNetCore.Services/1.0.0": {
+        "dependencies": {
+          "Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Devs2Blu.PrimeiroExercicioAPIASPNetCore.Services.dll": {}
+        }
+      },
+      "Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain/1.0.0": {
+        "runtime": {
+          "Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Devs2Blu.PrimeiroExercicioAPIASPNetCore.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

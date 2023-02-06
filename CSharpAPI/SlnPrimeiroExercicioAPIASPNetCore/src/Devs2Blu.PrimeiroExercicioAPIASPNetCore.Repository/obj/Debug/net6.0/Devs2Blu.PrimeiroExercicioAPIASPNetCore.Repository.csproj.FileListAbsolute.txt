@@ -1,0 +1,17 @@
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository\bin\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository.deps.json
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository\bin\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository.dll
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository\bin\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository.pdb
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository\bin\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain.dll
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository\bin\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain.pdb
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository\obj\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository.csproj.AssemblyReference.cache
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository\obj\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository\obj\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository.AssemblyInfoInputs.cache
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository\obj\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository.AssemblyInfo.cs
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository\obj\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository.csproj.CoreCompileInputs.cache
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository\obj\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository.csproj.CopyComplete
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository\obj\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository.dll
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository\obj\Debug\net6.0\refint\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository.dll
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository\obj\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository.pdb
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository\obj\Debug\net6.0\ref\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository.dll
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository\bin\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository.runtimeconfig.json
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository\obj\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Repository.genruntimeconfig.cache

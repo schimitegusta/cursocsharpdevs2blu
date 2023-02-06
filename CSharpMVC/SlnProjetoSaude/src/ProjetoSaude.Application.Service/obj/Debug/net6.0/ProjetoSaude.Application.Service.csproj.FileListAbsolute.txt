@@ -1,0 +1,15 @@
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Application.Service\bin\Debug\net6.0\ProjetoSaude.Application.Service.deps.json
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Application.Service\bin\Debug\net6.0\ProjetoSaude.Application.Service.dll
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Application.Service\bin\Debug\net6.0\ProjetoSaude.Application.Service.pdb
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Application.Service\bin\Debug\net6.0\ProjetoSaude.Domain.dll
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Application.Service\bin\Debug\net6.0\ProjetoSaude.Domain.pdb
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Application.Service\obj\Debug\net6.0\ProjetoSaude.Application.Service.csproj.AssemblyReference.cache
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Application.Service\obj\Debug\net6.0\ProjetoSaude.Application.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Application.Service\obj\Debug\net6.0\ProjetoSaude.Application.Service.AssemblyInfoInputs.cache
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Application.Service\obj\Debug\net6.0\ProjetoSaude.Application.Service.AssemblyInfo.cs
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Application.Service\obj\Debug\net6.0\ProjetoSaude.Application.Service.csproj.CoreCompileInputs.cache
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Application.Service\obj\Debug\net6.0\ProjetoSaude.Application.Service.csproj.CopyComplete
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Application.Service\obj\Debug\net6.0\ProjetoSaude.Application.Service.dll
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Application.Service\obj\Debug\net6.0\refint\ProjetoSaude.Application.Service.dll
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Application.Service\obj\Debug\net6.0\ProjetoSaude.Application.Service.pdb
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Application.Service\obj\Debug\net6.0\ref\ProjetoSaude.Application.Service.dll

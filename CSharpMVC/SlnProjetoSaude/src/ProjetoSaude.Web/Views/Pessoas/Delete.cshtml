@@ -1,0 +1,67 @@
+﻿@model ProjetoSaude.Domain.DTO.PessoaDTO
+<h1>Delete</h1>
+
+<h4>Pessoa</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Delete">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="id" />
+            <input type="hidden" asp-for="nome" />
+            <input type="hidden" asp-for="dataNasc" />
+            <input type="hidden" asp-for="sexo" />
+            <input type="hidden" asp-for="telefone" />
+            <input type="hidden" asp-for="email" />
+            <input type="hidden" asp-for="enderecoId" />
+
+            <div class="form-group">
+                <label asp-for="nome" class="control-label"></label>
+                <label asp-for="nome" class="form-control">@Model.nome</label>
+                <span asp-validation-for="nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="dataNasc" class="control-label"></label>
+                <label asp-for="dataNasc" class="form-control">@Model.dataNasc</label>
+                <span asp-validation-for="dataNasc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="sexo" class="control-label"></label>
+                <label asp-for="sexo" class="form-control">@Model.sexo</label>
+                <span asp-validation-for="sexo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="telefone" class="control-label"></label>
+                <label asp-for="telefone" class="form-control">@Model.telefone</label>
+                <span asp-validation-for="telefone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="email" class="control-label"></label>
+                <label asp-for="email" class="form-control">@Model.email</label>
+                <span asp-validation-for="email" class="text-danger"></span>
+            </div>
+            @*<div class="form-group">
+                <label asp-for="enderecoId" class="control-label"></label>
+                <select asp-for="enderecoId" class="form-control" asp-items="ViewBag.enderecoId"></select>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="enderecoId" class="control-label"></label>
+                <label asp-for="enderecoId" class="form-control">@Model.enderecoId</label>
+                <span asp-validation-for="enderecoId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Delete" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

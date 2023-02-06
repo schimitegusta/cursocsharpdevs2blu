@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Devs2Blu.PrimeiroExercicioAPIASPNetCore.API.props" />
+</Project>

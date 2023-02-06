@@ -1,0 +1,12 @@
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Domain\bin\Debug\net6.0\ProjetoSaude.Domain.deps.json
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Domain\bin\Debug\net6.0\ProjetoSaude.Domain.dll
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Domain\bin\Debug\net6.0\ProjetoSaude.Domain.pdb
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Domain\obj\Debug\net6.0\ProjetoSaude.Domain.csproj.AssemblyReference.cache
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Domain\obj\Debug\net6.0\ProjetoSaude.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Domain\obj\Debug\net6.0\ProjetoSaude.Domain.AssemblyInfoInputs.cache
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Domain\obj\Debug\net6.0\ProjetoSaude.Domain.AssemblyInfo.cs
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Domain\obj\Debug\net6.0\ProjetoSaude.Domain.csproj.CoreCompileInputs.cache
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Domain\obj\Debug\net6.0\ProjetoSaude.Domain.dll
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Domain\obj\Debug\net6.0\refint\ProjetoSaude.Domain.dll
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Domain\obj\Debug\net6.0\ProjetoSaude.Domain.pdb
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Domain\obj\Debug\net6.0\ref\ProjetoSaude.Domain.dll

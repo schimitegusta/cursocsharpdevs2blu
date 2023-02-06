@@ -1,0 +1,17 @@
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Infra.Data\bin\Debug\net6.0\ProjetoSaude.Infra.Data.deps.json
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Infra.Data\bin\Debug\net6.0\ProjetoSaude.Infra.Data.runtimeconfig.json
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Infra.Data\bin\Debug\net6.0\ProjetoSaude.Infra.Data.dll
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Infra.Data\bin\Debug\net6.0\ProjetoSaude.Infra.Data.pdb
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Infra.Data\bin\Debug\net6.0\ProjetoSaude.Domain.dll
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Infra.Data\bin\Debug\net6.0\ProjetoSaude.Domain.pdb
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Infra.Data\obj\Debug\net6.0\ProjetoSaude.Infra.Data.csproj.AssemblyReference.cache
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Infra.Data\obj\Debug\net6.0\ProjetoSaude.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Infra.Data\obj\Debug\net6.0\ProjetoSaude.Infra.Data.AssemblyInfoInputs.cache
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Infra.Data\obj\Debug\net6.0\ProjetoSaude.Infra.Data.AssemblyInfo.cs
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Infra.Data\obj\Debug\net6.0\ProjetoSaude.Infra.Data.csproj.CoreCompileInputs.cache
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Infra.Data\obj\Debug\net6.0\ProjetoSaude.Infra.Data.csproj.CopyComplete
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Infra.Data\obj\Debug\net6.0\ProjetoSaude.Infra.Data.dll
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Infra.Data\obj\Debug\net6.0\refint\ProjetoSaude.Infra.Data.dll
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Infra.Data\obj\Debug\net6.0\ProjetoSaude.Infra.Data.pdb
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Infra.Data\obj\Debug\net6.0\ProjetoSaude.Infra.Data.genruntimeconfig.cache
+D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Infra.Data\obj\Debug\net6.0\ref\ProjetoSaude.Infra.Data.dll

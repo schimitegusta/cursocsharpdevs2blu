@@ -1,0 +1,12 @@
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain\bin\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain.deps.json
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain\bin\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain.dll
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain\bin\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain.pdb
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain\obj\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain.csproj.AssemblyReference.cache
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain\obj\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain\obj\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain.AssemblyInfoInputs.cache
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain\obj\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain.AssemblyInfo.cs
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain\obj\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain.csproj.CoreCompileInputs.cache
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain\obj\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain.dll
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain\obj\Debug\net6.0\refint\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain.dll
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain\obj\Debug\net6.0\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain.pdb
+D:\dev\devs2blu\CSharpAPI\SlnPrimeiroExercicioAPIASPNetCore\src\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain\obj\Debug\net6.0\ref\Devs2Blu.PrimeiroExercicioAPIASPNetCore.Domain.dll

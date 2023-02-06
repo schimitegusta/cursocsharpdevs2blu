@@ -100,10 +100,10 @@ namespace RevisaoProjetoNoticias.Web.Controllers
             return View(news);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> ImagePost([Bind("idNews")] ImageFieldNews newsModel)
-        {
-            var news = _service.FindById(newsModel.idNews);
-        }
+        //[HttpPost]
+        //public async Task<IActionResult> ImagePost([Bind("idNews")] ImageFieldNews newsModel)
+        //{
+        //    var news = _service.FindById(newsModel.idNews);
+        //}
     }
 }

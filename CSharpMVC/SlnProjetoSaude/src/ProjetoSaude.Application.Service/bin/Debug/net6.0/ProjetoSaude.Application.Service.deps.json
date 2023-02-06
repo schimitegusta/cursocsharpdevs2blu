@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ProjetoSaude.Application.Service/1.0.0": {
+        "dependencies": {
+          "ProjetoSaude.Domain": "1.0.0"
+        },
+        "runtime": {
+          "ProjetoSaude.Application.Service.dll": {}
+        }
+      },
+      "ProjetoSaude.Domain/1.0.0": {
+        "runtime": {
+          "ProjetoSaude.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProjetoSaude.Application.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProjetoSaude.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
