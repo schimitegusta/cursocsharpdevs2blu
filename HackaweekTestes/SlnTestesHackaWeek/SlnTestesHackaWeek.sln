@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestesHackaWeek.Web", "src\TestesHackaWeek.Web\TestesHackaWeek.Web.csproj", "{6354951C-3F8E-4ABD-A3BC-6E25B664990E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertHTMLtoXML", "src\ConvertHTMLtoXML\ConvertHTMLtoXML.csproj", "{D7152DD5-B0F3-4960-9867-0D6CE16BE306}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6354951C-3F8E-4ABD-A3BC-6E25B664990E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6354951C-3F8E-4ABD-A3BC-6E25B664990E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6354951C-3F8E-4ABD-A3BC-6E25B664990E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6354951C-3F8E-4ABD-A3BC-6E25B664990E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7152DD5-B0F3-4960-9867-0D6CE16BE306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7152DD5-B0F3-4960-9867-0D6CE16BE306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7152DD5-B0F3-4960-9867-0D6CE16BE306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7152DD5-B0F3-4960-9867-0D6CE16BE306}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {979250A2-CFEE-4098-B836-7F43A1996311}
+	EndGlobalSection
+EndGlobal

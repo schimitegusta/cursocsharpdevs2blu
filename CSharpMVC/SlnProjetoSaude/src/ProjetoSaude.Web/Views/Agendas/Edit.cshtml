@@ -1,0 +1,45 @@
+﻿@model ProjetoSaude.Domain.DTO.AgendaDTO
+<h1>Edit</h1>
+
+<h4>Agenda</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="titulo" class="control-label"></label>
+                <input asp-for="titulo" class="form-control" />
+                <span asp-validation-for="titulo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="descricao" class="control-label"></label>
+                <input asp-for="descricao" class="form-control" />
+                <span asp-validation-for="descricao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="dataConsulta" class="control-label"></label>
+                <input asp-for="dataConsulta" class="form-control" />
+                <span asp-validation-for="dataConsulta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="pacienteId" class="control-label"></label>
+                <input asp-for="pacienteId" class="form-control" />
+                <span asp-validation-for="pacienteId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

@@ -1,0 +1,12 @@
+D:\dev\devs2blu\HackaweekTestes\SlnTestesHackaWeek\src\ConvertHTMLtoXML\bin\Debug\net6.0\ConvertHTMLtoXML.deps.json
+D:\dev\devs2blu\HackaweekTestes\SlnTestesHackaWeek\src\ConvertHTMLtoXML\bin\Debug\net6.0\ConvertHTMLtoXML.dll
+D:\dev\devs2blu\HackaweekTestes\SlnTestesHackaWeek\src\ConvertHTMLtoXML\bin\Debug\net6.0\ConvertHTMLtoXML.pdb
+D:\dev\devs2blu\HackaweekTestes\SlnTestesHackaWeek\src\ConvertHTMLtoXML\obj\Debug\net6.0\ConvertHTMLtoXML.csproj.AssemblyReference.cache
+D:\dev\devs2blu\HackaweekTestes\SlnTestesHackaWeek\src\ConvertHTMLtoXML\obj\Debug\net6.0\ConvertHTMLtoXML.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\devs2blu\HackaweekTestes\SlnTestesHackaWeek\src\ConvertHTMLtoXML\obj\Debug\net6.0\ConvertHTMLtoXML.AssemblyInfoInputs.cache
+D:\dev\devs2blu\HackaweekTestes\SlnTestesHackaWeek\src\ConvertHTMLtoXML\obj\Debug\net6.0\ConvertHTMLtoXML.AssemblyInfo.cs
+D:\dev\devs2blu\HackaweekTestes\SlnTestesHackaWeek\src\ConvertHTMLtoXML\obj\Debug\net6.0\ConvertHTMLtoXML.csproj.CoreCompileInputs.cache
+D:\dev\devs2blu\HackaweekTestes\SlnTestesHackaWeek\src\ConvertHTMLtoXML\obj\Debug\net6.0\ConvertHTMLtoXML.dll
+D:\dev\devs2blu\HackaweekTestes\SlnTestesHackaWeek\src\ConvertHTMLtoXML\obj\Debug\net6.0\refint\ConvertHTMLtoXML.dll
+D:\dev\devs2blu\HackaweekTestes\SlnTestesHackaWeek\src\ConvertHTMLtoXML\obj\Debug\net6.0\ConvertHTMLtoXML.pdb
+D:\dev\devs2blu\HackaweekTestes\SlnTestesHackaWeek\src\ConvertHTMLtoXML\obj\Debug\net6.0\ref\ConvertHTMLtoXML.dll

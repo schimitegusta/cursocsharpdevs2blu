@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using ProjetoSaude.Application.Service.SQLServerServices;
 using ProjetoSaude.Domain.DTO;
 using ProjetoSaude.Domain.IServices;
 using ProjetoSaude.Web.Models;
@@ -10,10 +11,12 @@ namespace ProjetoSaude.Web.Controllers
     public class PessoasController : Controller
     {
         private readonly IPessoaService _service;
+        private readonly IEnderecoService _enderecoService;
 
-        public PessoasController(IPessoaService service)
+        public PessoasController(IPessoaService service, IEnderecoService enderecoService)
         {
             _service = service;
+            _enderecoService = enderecoService;
         }
 
         public async Task<IActionResult> Index()
@@ -31,6 +34,7 @@ namespace ProjetoSaude.Web.Controllers
 
         public IActionResult Create()
         {
+            ViewData["enderecoId"] = new SelectList(_enderecoService.FindAll(), "id", "rua", "Select...");
             return View();
         }
 
@@ -52,6 +56,7 @@ namespace ProjetoSaude.Web.Controllers
                 return NotFound();
             }
             var pessoa = await _service.FindById(id);
+            ViewData["enderecoId"] = new SelectList(_enderecoService.FindAll(), "id", "rua", "Select...");
             return View(pessoa);
         }
 
@@ -77,6 +82,7 @@ namespace ProjetoSaude.Web.Controllers
                 return NotFound();
             }
             var pessoa = await _service.FindById(id);
+            ViewData["enderecoId"] = new SelectList(_enderecoService.FindAll(), "id", "rua", "Select...");
             return View(pessoa);
         }
 

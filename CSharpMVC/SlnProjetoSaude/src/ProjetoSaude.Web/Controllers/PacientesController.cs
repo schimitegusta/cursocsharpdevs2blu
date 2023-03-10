@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using ProjetoSaude.Domain.DTO;
 using ProjetoSaude.Domain.IServices;
 
@@ -7,11 +8,12 @@ namespace ProjetoSaude.Web.Controllers
     public class PacientesController : Controller
     {
         private readonly IPacienteService _service;
-        private readonly IPessoaService _servicePessoa;
+        private readonly IPessoaService _pessoaService;
 
-        public PacientesController(IPacienteService service)
+        public PacientesController(IPacienteService service, IPessoaService pessoaService)
         {
             _service = service;
+            _pessoaService = pessoaService;
         }
 
         public async Task<IActionResult> Index()
@@ -29,6 +31,7 @@ namespace ProjetoSaude.Web.Controllers
 
         public IActionResult Create()
         {
+            ViewData["pessoaId"] = new SelectList(_pessoaService.FindAll(), "id", "nome", "Select...");
             return View();
         }
 
@@ -50,6 +53,7 @@ namespace ProjetoSaude.Web.Controllers
                 return NotFound();
             }
             var paciente = await _service.FindById(id);
+            ViewData["pessoaId"] = new SelectList(_pessoaService.FindAll(), "id", "nome", "Select...");
             return View(paciente);
         }
 
@@ -75,6 +79,7 @@ namespace ProjetoSaude.Web.Controllers
                 return NotFound();
             }
             var paciente = await _service.FindById(id);
+            ViewData["pessoaId"] = new SelectList(_pessoaService.FindAll(), "id", "nome", "Select...");
             return View(paciente);
         }
 

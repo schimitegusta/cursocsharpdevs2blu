@@ -1,0 +1,23 @@
+.perfil img {
+    width: 140px;
+    height: 140px;
+
+    border-radius: 100%;
+    position: relative;
+    float: left;
+    margin: 1em;
+}
+
+.dados-paciente {
+    width: 50em;
+}
+
+.info-pacientes {
+    margin: 1em;
+    position: relative;
+}
+
+.paciente {
+    margin: 2.5em;
+    position: relative;
+}

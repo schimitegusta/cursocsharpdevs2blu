@@ -1,0 +1,332 @@
+<!doctype html>
+<html moznomarginboxes mozdisallowselectionprint>
+
+<head>
+	<meta charset="utf-8">
+	<title>NFSe</title>
+
+	<script src="https://df0b2gxkwzojk.cloudfront.net/javascripts/jquery.js" type="text/javascript"></script>
+	<script src="https://df0b2gxkwzojk.cloudfront.net/javascripts/qrcode.min.js" type="text/javascript"></script>
+
+	<style>
+		@media print {
+			@page {
+				margin: 0;
+			}
+
+			/* aumenta margem pra página ocupar espaço do header */
+			body {
+				margin: 1.6cm;
+			}
+
+			/* coloca margem pro body*/
+
+
+		}
+
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.sem-valor {
+			/* Safari */
+			-webkit-transform: rotate(300deg);
+
+			/* Firefox */
+			-moz-transform: rotate(300deg);
+
+			/* IE */
+			-ms-transform: rotate(300deg);
+
+			/* Opera */
+			-o-transform: rotate(300deg);
+
+			/* Internet Explorer */
+			filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+			position: absolute;
+			color: #a80000;
+			font-weight: bold;
+			font-size: 70px;
+			margin: 300px 0 0 0;
+			opacity: 0.6;
+			padding: 10px 30px;
+			width: 700px;
+			display: block;
+		}
+
+		.table-outter {
+			border: 1px solid #000;
+			width: 700px;
+		}
+
+		.texto-10 {
+			font-size: 10px;
+		}
+
+		.texto-12 {
+			font-size: 12px;
+		}
+
+		.texto-14 {
+			font-size: 14px;
+		}
+
+		.texto-16 {
+			font-size: 16px;
+		}
+
+		.texto-18 {
+			font-size: 18px;
+		}
+
+		.bold {
+			font-weight: bold;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		.right {
+			text-align: right;
+		}
+
+		.border-left {
+			border-left: 1px solid #000;
+		}
+
+		.border-right {
+			border-right: 1px solid #000;
+		}
+
+		.border-top {
+			border-top: 1px solid #000;
+		}
+
+		.border-bottom {
+			border-bottom: 1px solid #000;
+		}
+
+		.border {
+			border: 1px solid #000;
+		}
+
+		p.margin-0 {
+			margin: 0;
+		}
+
+		.logo-prefeitura {}
+
+		.logo-prestador {}
+
+		.qr-code {
+			margin-left: 55px;
+		}
+
+		.focus-nfe {
+			margin: 10px 0 0 0;
+			font-size: 10px;
+		}
+	</style>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+  var qrcode = new QRCode(document.getElementById('qr-code'), {
+    text: "https://api.focusnfe.com.br/notas_fiscais_servico/NFSe331360320001784202404-131686-9412-656FCD291.html",
+    width: 100,
+    height: 100,
+    colorDark : "#000000",
+    colorLight : "#ffffff",
+  });
+})
+	</script>
+
+</head>
+
+<body>
+
+
+	<div class="table-outter">
+		<!-- Prefeitura -->
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td width="20%" height="120" class="center border-bottom">
+					<div class="logo-prefeitura">
+						<img alt="Brasao-4202404" src="https://api.focusnfe.com.br/images/brasao-4202404.png" /> </div>
+				</td>
+				<td width="50%" class="center border-right border-bottom">
+					<p class="texto-16 bold margin-0">Município de Blumenau</p>
+					<p class="texto-14 bold margin-0">Secretaria Municipal da Fazenda</p>
+					<p class="texto-12 margin-0">Divisão de Fiscalização Tributária</p>
+					<p class="texto-12 margin-0"></p>
+					<p class="texto-12 margin-0"></p>
+					<p class="texto-14 bold">Nota Fiscal de Serviços Eletrônica - NFSe</p>
+				</td>
+				<td width="30%" valign="top" class="border-bottom">
+					<table width="100%" border="0" cellpadding="3" cellspacing="0">
+						<tr>
+							<td class="border-bottom"><span class="texto-12">Número da Nota</span></td>
+						</tr>
+						<tr>
+							<td class="right border-bottom">9412</td>
+						</tr>
+						<tr>
+							<td class="border-bottom"><span class="texto-12">Data e Hora de Emissão</span></td>
+						</tr>
+						<tr>
+							<td class="right border-bottom">28/02/2023 15:44:56</td>
+						</tr>
+						<tr>
+							<td class="border-bottom"><span class="texto-12">Código de Verificação</span></td>
+						</tr>
+						<tr>
+							<td class="right">656FCD291</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<!-- Prefeitura -->
+
+		<!-- Prestador de Serviços -->
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td width="20%" height="120" class="center border-bottom">
+					<div class="logo-prestador">
+					</div>
+				</td>
+				<td width="50%" class="center border-right border-bottom">
+					<p class="texto-14 margin-0">PRESTADOR DE SERVIÇOS</p>
+					<p class="margin-0">&nbsp;</p>
+					<p class="texto-14 margin-0 bold">IOA Blumenau</p>
+					<p class="texto-12 margin-0">
+						Via Expressa Paul Fritz Kuehnrich,
+						1600 SHOPPING PARK EUROPEU
+						- Itoupava Norte
+					</p>
+					<p class="texto-12 margin-0">
+						Blumenau/SC - CEP: 89052-381
+					</p>
+					<p class="texto-12 margin-0">
+						Telefone: (47) 99673-0095
+						-
+						Email: financeiro@ioablumenau.com.br
+					</p>
+					<p class="texto-12 margin-0">CNPJ: 33.136.032/0001-78 - Inscrição Municipal: 131686</p>
+				</td>
+				<td width="30%" class="center border-bottom">
+					<div class="qr-code" id='qr-code'></div>
+				</td>
+			</tr>
+		</table>
+		<!-- Prestador de Serviços -->
+
+
+		<!-- Tomador de Serviços -->
+		<table width="100%" border="0" cellpadding="3" cellspacing="0">
+			<tr>
+				<td height="30" colspan="2" class="center"><span class="texto-14 bold">TOMADOR DE SERVIÇOS</span></td>
+			</tr>
+			<tr>
+				<td width="50%" valign="top" class="border-bottom">
+					<p class="texto-12">CNPJ/CPF: <span class="bold">720.765.209-30</span></p>
+					<p class="texto-12">Endereço: <span class="bold">
+        Rua Verde
+      </span></p>
+					<p class="texto-12">Cidade: <span class="bold">Blumenau</span></p>
+					<p class="texto-12">Estado: <span class="bold">SC</span></p>
+					<p class="texto-12">CEP: <span class="bold">89.150-220</span></p>
+				</td>
+				<td width="50%" valign="top" class="border-bottom">
+					<p class="texto-12">Razão Social/Nome: <span class="bold">Gustavo TESTE Soares </span></p>
+					<p class="texto-12">Número: <span class="bold">789 </span></p>
+					<p class="texto-12">Complemento: <span class="bold">NI</span></p>
+					<p class="texto-12">Bairro: <span class="bold">Progresso</span></p>
+				</td>
+				</td>
+			</tr>
+		</table>
+		<!-- Tomador de Serviços -->
+
+		<!-- Discriminação dos Serviços -->
+		<table width="100%" border="0" cellpadding="3" cellspacing="0">
+			<tr>
+				<td height="30" class="center"><span class="texto-14 bold">DISCRIMINAÇÃO DOS SERVIÇOS</span></td>
+			</tr>
+			<tr>
+				<td>
+					<p class="texto-12 margin-0 bold">Lançamento de Tratamento</p>
+					<p class="texto-12 margin-0">Código Servico: 632207</p>
+					<p class="texto-12 margin-0">Subitem da lista de serviços: 08.01</p>
+					<p class="texto-12 margin-0">&nbsp;</p>
+					<p class="texto-12 margin-0">Código CNAE: 8533300</p>
+					<p class="texto-12 margin-0">Cód/Município de incidência do ISSQN: 4202404 / Blumenau/SC</p>
+					<p class="texto-12 margin-0">Natureza da Operação: 02 – Não incidência</p>
+					<p class="texto-12 margin-0">&nbsp;</p>
+				</td>
+			</tr>
+		</table>
+		<!-- Discriminação dos Serviços -->
+
+		<!-- Valores -->
+		<table width="100%" border="0" cellpadding="3" cellspacing="0" class="texto-12">
+			<tr>
+				<td class="border-bottom border-top border-right"><span class="bold">Retenção de Cofins</span></td>
+				<td class="border-bottom border-top border-right"><span class="bold">Retenção de CSLL</span></td>
+				<td class="border-bottom border-top border-right"><span class="bold">Retenção de INSS</span></td>
+				<td class="border-bottom border-top border-right"><span class="bold">Retenção de IRPJ</span></td>
+				<td class="border-bottom border-top"><span class="bold">Retenção de PIS</span></td>
+			</tr>
+			<tr>
+				<td class="right border-bottom border-right">&nbsp;</td>
+				<td class="right border-bottom border-right">&nbsp;</td>
+				<td class="right border-bottom border-right">&nbsp;</td>
+				<td class="right border-bottom border-right">&nbsp;</td>
+				<td class="right border-bottom">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="border-bottom border-right"><span class="bold">Descontos</span></td>
+				<td class="border-bottom border-right"><span class="bold">Valor Serviço</span></td>
+				<td class="border-bottom border-right"><span class="bold">Base de Cálculo</span></td>
+				<td class="border-bottom border-right"><span class="bold">Alíquota</span></td>
+				<td class="border-bottom"><span class="bold">Valor ISSQN</span></td>
+			</tr>
+			<tr>
+				<td class="right border-bottom border-right">&nbsp;R$ 0,00</td>
+				<td class="right border-bottom border-right">&nbsp;R$ 100,00</td>
+				<td class="right border-bottom border-right">&nbsp;</td>
+				<td class="right border-bottom border-right">&nbsp;2,0000%</td>
+				<td class="right border-bottom">&nbsp;R$ 2,00</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="right"><span class="bold">VALOR TOTAL DA NOTA</span></td>
+				<td class="right">R$ 100,00</td>
+			</tr>
+		</table>
+		<!-- Valores -->
+
+		<!-- Outras Informações -->
+		<table width="100%" border="0" cellpadding="3" cellspacing="0" class="texto-12">
+			<tr>
+				<td height="30" class="center border-top"><span class="texto-14 bold">OUTRAS INFORMAÇÕES</span></td>
+			</tr>
+			<tr>
+				<td>
+					<p>Consulta NFSe:
+						<span class="texto-14 bold"><a href="http://blumenau.simplissweb.com.br/">http://blumenau.simplissweb.com.br/</a></span>
+					</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<!-- Outras Informações -->
+
+	<div class="focus-nfe">Nota Fiscal de Serviços Eletrônica gerada pela API do Focus NFe. <a
+			href="http://www.focusnfe.com.br/api" title="Integração NFe" target="_blank">http://www.focusnfe.com.br</a>
+	</div>
+
+
+</body>
+
+</html>

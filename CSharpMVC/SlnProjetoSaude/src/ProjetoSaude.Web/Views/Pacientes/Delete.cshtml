@@ -30,8 +30,9 @@
             </div>
             <div class="form-group">
                 <label asp-for="pessoaId" class="control-label"></label>
-                <label asp-for="pessoaId" class="form-control">@Model.pessoaId</label>
-                <span asp-validation-for="pessoaId" class="text-danger"></span>
+                <select asp-for="pessoaId" class="form-control" asp-items="ViewBag.pessoaId" disabled></select>
+                @*<label asp-for="pessoaId" class="form-control">@Model.pessoaId</label>
+                <span asp-validation-for="pessoaId" class="text-danger"></span>*@
             </div>
             <div class="form-group">
                 <input type="submit" value="Delete" class="btn btn-primary" />

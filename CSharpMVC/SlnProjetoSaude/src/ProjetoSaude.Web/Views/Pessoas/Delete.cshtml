@@ -40,14 +40,9 @@
                 <label asp-for="email" class="form-control">@Model.email</label>
                 <span asp-validation-for="email" class="text-danger"></span>
             </div>
-            @*<div class="form-group">
-                <label asp-for="enderecoId" class="control-label"></label>
-                <select asp-for="enderecoId" class="form-control" asp-items="ViewBag.enderecoId"></select>
-            </div>*@
             <div class="form-group">
                 <label asp-for="enderecoId" class="control-label"></label>
-                <label asp-for="enderecoId" class="form-control">@Model.enderecoId</label>
-                <span asp-validation-for="enderecoId" class="text-danger"></span>
+                <select asp-for="enderecoId" class="form-control" asp-items="ViewBag.enderecoId" disabled></select>
             </div>
             <div class="form-group">
                 <input type="submit" value="Delete" class="btn btn-primary" />

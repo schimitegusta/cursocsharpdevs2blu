@@ -16,6 +16,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\dev\devs2blu\CSharpMVC\SlnProjetoSaude\src\ProjetoSaude.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/dev/devs2blu/CSharpMVC/SlnProjetoSaude/src/ProjetoSaude.Web/Views/Agendas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dev/devs2blu/CSharpMVC/SlnProjetoSaude/src/ProjetoSaude.Web/Views/Agendas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dev/devs2blu/CSharpMVC/SlnProjetoSaude/src/ProjetoSaude.Web/Views/Agendas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dev/devs2blu/CSharpMVC/SlnProjetoSaude/src/ProjetoSaude.Web/Views/Agendas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/dev/devs2blu/CSharpMVC/SlnProjetoSaude/src/ProjetoSaude.Web/Views/Enderecos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5kZXJlY29zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -70,6 +86,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/dev/devs2blu/CSharpMVC/SlnProjetoSaude/src/ProjetoSaude.Web/Views/Pessoas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dev/devs2blu/CSharpMVC/SlnProjetoSaude/src/ProjetoSaude.Web/Views/Prontuarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvbnR1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dev/devs2blu/CSharpMVC/SlnProjetoSaude/src/ProjetoSaude.Web/Views/Prontuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvbnR1YXJpb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dev/devs2blu/CSharpMVC/SlnProjetoSaude/src/ProjetoSaude.Web/Views/Prontuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvbnR1YXJpb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dev/devs2blu/CSharpMVC/SlnProjetoSaude/src/ProjetoSaude.Web/Views/Prontuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvbnR1YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/dev/devs2blu/CSharpMVC/SlnProjetoSaude/src/ProjetoSaude.Web/Views/Shared/Error.cshtml]

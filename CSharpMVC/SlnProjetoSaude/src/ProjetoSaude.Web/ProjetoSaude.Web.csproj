@@ -23,9 +23,4 @@
     <ProjectReference Include="..\ProjetoSaude.Infra.Data\ProjetoSaude.Infra.Data.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\Agendas\" />
-    <Folder Include="Views\Prontuarios\" />
-  </ItemGroup>
-
 </Project>
